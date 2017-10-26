@@ -1,0 +1,41 @@
+.main-capabilities {
+  padding-left: 110px;
+  float: left;
+  margin-right: 110px;
+
+
+  &__link {
+
+    &--hidden {
+      display: none;
+    }
+  }
+
+  &__descr {
+    position: relative;
+    font-size: 18px;
+    margin-left: -40px;
+
+    &--green {
+      color: #63be63;
+      font-family: "ProximaNovaBold";
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 19px;
+      height: 13px;
+      background-image: url("src/img/shape.png");
+      background-repeat: no-repeat;
+      background-size: 19px 13px;
+      left: 332px;
+      top: 12px;
+    }
+  }
+
+  &__try-btn--hidden {
+    display: none;
+  }
+
+}

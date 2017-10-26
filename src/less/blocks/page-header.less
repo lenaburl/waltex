@@ -1,0 +1,73 @@
+.page-header {
+    padding-top: 27px;
+  background-image: url("src/img/header-bg.png");
+
+  &__top {
+    display: flex;
+    height: 56px;
+    justify-content: space-between;
+    margin-bottom: 58px;
+  }
+
+  &__logo {
+    width: 183px;
+    margin-right: 5px;
+  }
+
+  &__title {
+    color: #2c3e50;
+    font-family: "ProximaNovaLight";
+    font-size: 42px;
+    line-height: 46px;
+    margin-bottom: -12px;
+
+    &--green {
+      color: #4ab14a;
+    }
+  }
+
+  &__descr {
+    color: #8b9197;
+    font-size: 22px;
+    margin-bottom: 55px;
+  }
+
+  &__screen {
+    width: 645px;
+    float: left;
+    margin-right: 40px;
+  }
+
+  &__next {
+    background-color: white;
+    height: 94px;
+    color: #2c3e50;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 25px;
+    text-align: center;
+
+    p {
+      width: 800px;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+
+    a {
+      position: relative;
+      margin: 0 auto;
+      max-width: 21px;
+      text-align: center;
+    }
+
+    a::after {
+      position: absolute;
+      content: "";
+      width: 21px;
+      height: 10px;
+      background-image: url("src/img/ChevronRight.png");
+      background-repeat: no-repeat;
+      background-size: 21px 10px;
+    }
+  }
+}

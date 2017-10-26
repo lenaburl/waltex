@@ -1,0 +1,200 @@
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "ProximaNovaRegular";
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+@font-face {
+  font-family: ProximaNovaRegular;
+  src: url(src/fonts/ProximaNovaRegular.otf);
+}
+@font-face {
+  font-family: ProximaNovaLight;
+  src: url(src/fonts/ProximaNovaLight.otf);
+}
+@font-face {
+  font-family: ProximaNovaBold;
+  src: url(src/fonts/ProximaNovaBold.otf);
+}
+@font-face {
+  font-family: ProximaNovaSemibold;
+  src: url(src/fonts/ProximaNovaSemibold.otf);
+}
+.clearfix {
+  height: 0px;
+  clear: both;
+}
+.container {
+  max-width: 1186px;
+  margin: 0 auto;
+}
+.page-header {
+  padding-top: 27px;
+  background-image: url("src/img/header-bg.png");
+}
+.page-header__top {
+  display: flex;
+  height: 56px;
+  justify-content: space-between;
+  margin-bottom: 58px;
+}
+.page-header__logo {
+  width: 183px;
+  margin-right: 5px;
+}
+.page-header__title {
+  color: #2c3e50;
+  font-family: "ProximaNovaLight";
+  font-size: 42px;
+  line-height: 46px;
+  margin-bottom: -12px;
+}
+.page-header__title--green {
+  color: #4ab14a;
+}
+.page-header__descr {
+  color: #8b9197;
+  font-size: 22px;
+  margin-bottom: 55px;
+}
+.page-header__screen {
+  width: 645px;
+  float: left;
+  margin-right: 40px;
+}
+.page-header__next {
+  background-color: white;
+  height: 94px;
+  color: #2c3e50;
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 25px;
+  text-align: center;
+}
+.page-header__next p {
+  width: 800px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.page-header__next a {
+  position: relative;
+  margin: 0 auto;
+  max-width: 21px;
+  text-align: center;
+}
+.page-header__next a::after {
+  position: absolute;
+  content: "";
+  width: 21px;
+  height: 10px;
+  background-image: url("src/img/ChevronRight.png");
+  background-repeat: no-repeat;
+  background-size: 21px 10px;
+}
+.page-header__hr {
+  color: #ecf1ec;
+  size: 1px;
+}
+.main-nav {
+  display: flex;
+  width: 370px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: 296px;
+  padding-top: 22px;
+}
+.main-nav__item a {
+  color: #5f6d7c;
+}
+.main-nav__item--active a {
+  color: #2c3e50;
+}
+.btn {
+  border: 1px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+  height: 36px;
+  line-height: 35px;
+  font-size: 15px;
+}
+.btn__enter {
+  width: 74px;
+  background-color: #4ab14a;
+  color: white;
+  border: none;
+  text-align: center;
+  margin-top: 13px;
+}
+.btn__registration {
+  width: 140px;
+  background-color: none;
+  color: #7d8993;
+  border-color: #8b9197;
+  text-align: center;
+  margin-top: 13px;
+  margin-right: -32px;
+}
+.main-capabilities {
+  padding-left: 110px;
+  float: left;
+  margin-right: 110px;
+}
+.main-capabilities__link--hidden {
+  display: none;
+}
+.main-capabilities__descr {
+  position: relative;
+  font-size: 18px;
+  margin-left: -40px;
+}
+.main-capabilities__descr--green {
+  color: #63be63;
+  font-family: "ProximaNovaBold";
+}
+.main-capabilities__descr::after {
+  content: "";
+  position: absolute;
+  width: 19px;
+  height: 13px;
+  background-image: url("src/img/shape.png");
+  background-repeat: no-repeat;
+  background-size: 19px 13px;
+  left: 332px;
+  top: 12px;
+}
+.main-capabilities__try-btn--hidden {
+  display: none;
+}
+.capabilities-list {
+  margin-bottom: 38px;
+}
+.capabilities-list__item {
+  position: relative;
+  color: #2c3e50;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 8px;
+}
+.capabilities-list__item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 12px;
+  background-image: url("src/img/checkmark.png");
+  background-repeat: no-repeat;
+  background-size: 16px 12px;
+  left: -40px;
+  top: 8px;
+}

@@ -1,7 +1,12 @@
 html,
 body {
+  width: 100%;
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: "ProximaNovaRegular";
 }
 
 ul {
@@ -13,4 +18,35 @@ ul {
 
 a {
   text-decoration: none;
+  color: black;
+}
+
+@font-face {
+    font-family: ProximaNovaRegular;
+    src: url(src/fonts/ProximaNovaRegular.otf);
+}
+
+@font-face {
+    font-family: ProximaNovaLight;
+    src: url(src/fonts/ProximaNovaLight.otf);
+}
+
+@font-face {
+    font-family: ProximaNovaBold;
+    src: url(src/fonts/ProximaNovaBold.otf);
+}
+
+@font-face {
+    font-family: ProximaNovaSemibold;
+    src: url(src/fonts/ProximaNovaSemibold.otf);
+}
+
+.clearfix {
+  height: 0px;
+  clear: both;
+}
+
+.container {
+  max-width: 1186px;
+  margin: 0 auto;
 }

@@ -1,0 +1,25 @@
+.capabilities-list {
+  margin-bottom: 38px;
+
+  &__item {
+    position: relative;
+    color: #2c3e50;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 8px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 12px;
+      background-image: url("src/img/checkmark.png");
+      background-repeat: no-repeat;
+      background-size: 16px 12px;
+      left: -40px;
+      top: 8px;
+    }
+  }
+}
+
+
