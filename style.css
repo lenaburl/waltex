@@ -384,6 +384,7 @@ a {
   margin: 0 auto;
   padding-left: 55px;
   padding-right: 215px;
+  margin-bottom: 65px;
   display: flex;
   justify-content: space-between;
 }
@@ -425,4 +426,45 @@ a {
   padding-top: 5px;
   left: 185px;
   top: 48px;
+}
+.income-and-expenses {
+  padding-top: 70px;
+  padding-left: 137px;
+  background-image: url("src/img/features-bg.png");
+}
+.income-and-expenses__descr {
+  font-size: 32px;
+  line-height: 47px;
+  color: #2c3e50;
+  width: 790px;
+  margin-right: 0px;
+  margin-bottom: 130px;
+}
+.income-and-expenses__descr--green {
+  color: #66bd66;
+}
+.income-and-expenses .capabilities-list {
+  position: relative;
+  padding-left: 95px;
+  font-size: 17px;
+  float: left;
+}
+.income-and-expenses .capabilities-list::after {
+  content: "";
+  position: absolute;
+  width: 505px;
+  height: 295px;
+  border: 1px solid #d0d9e2;
+  border-radius: 10px 0 0 10px;
+  border-right: none;
+  top: -60px;
+  left: 0px;
+  z-index: 10;
+}
+.income-and-expenses__screen {
+  width: 675px;
+  margin-top: -90px;
+  margin-left: -17px;
+  margin-bottom: 60px;
+  z-index: 1;
 }
