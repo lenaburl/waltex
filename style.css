@@ -37,7 +37,7 @@ a {
   clear: both;
 }
 .container {
-  max-width: 1186px;
+  width: 1186px;
   margin: 0 auto;
 }
 .page-header {
@@ -232,4 +232,197 @@ a {
 .main-features__screen {
   width: 680px;
   margin-bottom: 63px;
+}
+.optional-features {
+  padding-top: 106px;
+}
+.optional-features__title {
+  position: relative;
+  color: #2c3e50;
+  font-size: 40px;
+  line-htight: 47px;
+  font-family: "ProximaNovaLight";
+  text-align: center;
+  margin-bottom: 26px;
+}
+.optional-features__title::before {
+  content: "";
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  background-color: none;
+  border: 1px solid #c3cfd7;
+  border-radius: 50%;
+  top: -75px;
+  left: 562px;
+  background-image: url("src/img/cloud.png");
+  background-repeat: no-repeat;
+  background-size: 34px 25px;
+  background-position: center;
+}
+.features-list {
+  padding-left: 70px;
+  padding-right: 77px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.features-list__item {
+  width: 430px;
+  position: relative;
+  border-bottom: 1px dotted #cacaca;
+  padding-left: 90px;
+  box-sizing: border-box;
+  height: 120px;
+  line-height: 120px;
+}
+.features-list__item p {
+  line-height: 24px;
+  color: black;
+  font-size: 17px;
+  vertical-align: middle;
+  display: inline-block;
+}
+.features-list__item::before {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+}
+.features-list__item--planning::before {
+  background-image: url("src/img/planning.png");
+  width: 57px;
+  height: 57px;
+  background-size: 57px 57px;
+  top: 32px;
+  left: 3px;
+}
+.features-list__item--networking::before {
+  background-image: url("src/img/networking.png");
+  width: 58px;
+  height: 56px;
+  background-size: 58px 56px;
+  top: 38px;
+  left: 0px;
+}
+.features-list__item--team::before {
+  background-image: url("src/img/team.png");
+  width: 53px;
+  height: 52px;
+  background-size: 53px 52px;
+  top: 32px;
+  left: 3px;
+}
+.features-list__item--history::before {
+  background-image: url("src/img/history.png");
+  width: 60px;
+  height: 65px;
+  background-size: 60px 65px;
+  top: 25px;
+  left: 3px;
+}
+.features-list__item--note::before {
+  background-image: url("src/img/note.png");
+  width: 56px;
+  height: 56px;
+  background-size: 56px 56px;
+  top: 29px;
+  left: 6px;
+}
+.features-list__item--folders::before {
+  background-image: url("src/img/folders.png");
+  width: 59px;
+  height: 55px;
+  background-size: 59px 55px;
+  top: 28px;
+  left: 2px;
+}
+.features-list__item--calendar::before {
+  background-image: url("src/img/calendar.png");
+  width: 53px;
+  height: 48px;
+  background-size: 53px 48px;
+  top: 32px;
+  left: 5px;
+}
+.features-list__item--export::before {
+  background-image: url("src/img/export.png");
+  width: 51px;
+  height: 51px;
+  background-size: 51px 51px;
+  top: 26px;
+  left: 3px;
+}
+.features-list__item--clouds::before {
+  background-image: url("src/img/clouds.png");
+  width: 59px;
+  height: 37px;
+  background-size: 59px 37px;
+  top: 40px;
+  left: 3px;
+}
+.features-list__item--clouds {
+  border: none;
+}
+.features-list__item--server::before {
+  background-image: url("src/img/server.png");
+  width: 56px;
+  height: 51px;
+  background-size: 56px 51px;
+  top: 32px;
+  left: 3px;
+}
+.features-list__item--server {
+  border: none;
+}
+.integration {
+  width: 1045px;
+  height: 150px;
+  box-sizing: border-box;
+  border: 1px solid #d0d9e2;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding-left: 55px;
+  padding-right: 215px;
+  display: flex;
+  justify-content: space-between;
+}
+.integration p {
+  color: #2c3e50;
+  font-size: 28px;
+  line-height: 150px;
+  margin: 0;
+  margin-right: 55px;
+}
+.integration__item {
+  width: 180px;
+  margin-top: 37px;
+}
+.integration__item img {
+  width: 162px;
+}
+.integration__item p {
+  font-size: 17px;
+  color: black;
+  line-height: 28px;
+  margin-right: 0;
+  margin-top: 13px;
+}
+.integration__item--webasyst {
+  position: relative;
+}
+.integration__item--webasyst::after {
+  content: "Скоро";
+  position: absolute;
+  border-radius: 27px;
+  box-sizing: border-box;
+  width: 65px;
+  height: 27px;
+  background-color: #fab700;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  padding-top: 5px;
+  left: 185px;
+  top: 48px;
 }
