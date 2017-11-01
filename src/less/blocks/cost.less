@@ -1,0 +1,35 @@
+.cost {
+  padding-top: 80px;
+  margin-bottom: 64px;
+
+  &__title {
+    position: relative;
+    font-size: 34px;
+    font-faimly: "ProximaNovaSemibold";
+    color: @dark-blue;
+    text-align: center;
+    line-height: 45px;
+    margin-bottom: 5px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 107px;
+      height: 86px;
+      background-image: url("src/img/sprite.png");
+      background-repeat: no-repeat;
+      background-position: -20px -0px;
+      left: 545px;
+      top: -95px;
+    }
+  }
+
+  &__descr {
+    text-align: center;
+    font-size: 20px;
+    color: @dark-blue;
+    line-htight: 40px;
+    margin: 0;
+    margin-bottom: 52px;
+  }
+}

@@ -1,0 +1,59 @@
+.price {
+  width: 1250px;
+  box-sizing: border-box;
+  margin-left: -28px;
+
+  border-collapse: separate;
+    border-spacing: 28px 0px;
+
+  td {
+    padding-left: 10px;
+    border-top: none;
+    border-left: 1px solid @grey;
+    border-right: 1px solid #e7ecf0;
+    width: 262px;
+  }
+
+  tr,
+  td {
+    text-align: center;
+    color: #2c3e50;
+  }
+
+
+  &__months {
+    background-color: #f8fbfb;
+    line-height: 62px;
+    font-family: "ProximaNovaSemibold";
+    font-size: 20px;
+
+      td {
+        border-top: 1px solid @grey;
+        border-bottom: 1px solid #e7ecf0;
+      }
+  }
+
+  &__prev-cost {
+    line-height: 44px;
+    font-family: "ProximaNovaLight";
+    font-size: 22px;
+    text-decoration: line-through;
+    opacity: 0.7;
+
+    td {
+      padding-top: 20px;
+    }
+  }
+
+  &__current-cost {
+    line-height: 26px;
+    font-family: "ProximaNovaRegular";
+    font-size: 26px;
+
+    td {
+      border-bottom: 1px solid @grey;
+      padding-bottom: 25px;
+    }
+  }
+
+}

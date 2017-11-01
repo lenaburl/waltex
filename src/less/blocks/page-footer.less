@@ -1,0 +1,53 @@
+.page-footer {
+  padding-top: 52px;
+  padding-bottom: 40px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+
+  &__logo {
+    width: 120px;
+  }
+
+  &__right {
+    width: 400px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 85px;
+      border-left: 1px solid #cad1ca;
+      right: 469px;
+      top: 3px;
+    }
+
+  }
+
+  &__requisites {
+    float: left;
+    margin-top: 10px;
+    font-family: "ProximaNovaBold";
+    font-size: 14px;
+    margin-right: 180px;
+  }
+
+  &__ltd {
+    float: left;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  &__copyright {
+    float: right;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+
+
+}

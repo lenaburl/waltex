@@ -6,6 +6,7 @@ body {
 }
 body {
   font-family: "ProximaNovaRegular";
+  position: relative;
 }
 ul {
   list-style: none;
@@ -99,9 +100,9 @@ a {
   content: "";
   width: 21px;
   height: 10px;
-  background-image: url("src/img/ChevronRight.png");
+  background-image: url("src/img/sprite.png");
   background-repeat: no-repeat;
-  background-size: 21px 10px;
+  background-position: -20px -809px;
 }
 .main-nav {
   display: flex;
@@ -164,9 +165,9 @@ a {
   position: absolute;
   width: 19px;
   height: 13px;
-  background-image: url("src/img/shape.png");
+  background-image: url("src/img/sprite.png");
   background-repeat: no-repeat;
-  background-size: 19px 13px;
+  background-position: -61px -815px;
   left: 332px;
   top: 12px;
 }
@@ -188,9 +189,9 @@ a {
   position: absolute;
   width: 16px;
   height: 12px;
-  background-image: url("src/img/checkmark.png");
+  background-image: url("src/img/sprite.png");
   background-repeat: no-repeat;
-  background-size: 16px 12px;
+  background-position: -91px -693px;
   left: -40px;
   top: 8px;
 }
@@ -219,10 +220,9 @@ a {
   border-radius: 50%;
   top: -80px;
   left: 560px;
-  background-image: url("src/img/statistic.png");
+  background-image: url("src/img/sprite.png");
   background-repeat: no-repeat;
-  background-size: 28px 32px;
-  background-position: center;
+  background-position: -57px -750px;
 }
 .main-features .capabilities-list {
   float: right;
@@ -255,10 +255,9 @@ a {
   border-radius: 50%;
   top: -75px;
   left: 562px;
-  background-image: url("src/img/cloud.png");
+  background-image: url("src/img/sprite.png");
   background-repeat: no-repeat;
-  background-size: 34px 25px;
-  background-position: center;
+  background-position: -6px -744px;
 }
 .features-list {
   padding-left: 70px;
@@ -288,76 +287,68 @@ a {
   content: "";
   position: absolute;
   background-repeat: no-repeat;
+  background-image: url("src/img/sprite.png");
 }
 .features-list__item--planning::before {
-  background-image: url("src/img/planning.png");
   width: 57px;
   height: 57px;
-  background-size: 57px 57px;
+  background-position: -20px -400px;
   top: 32px;
   left: 3px;
 }
 .features-list__item--networking::before {
-  background-image: url("src/img/networking.png");
   width: 58px;
   height: 56px;
-  background-size: 58px 56px;
+  background-position: -20px -324px;
   top: 38px;
   left: 0px;
 }
 .features-list__item--team::before {
-  background-image: url("src/img/team.png");
   width: 53px;
   height: 52px;
-  background-size: 53px 52px;
+  background-position: -20px -621px;
   top: 32px;
   left: 3px;
 }
 .features-list__item--history::before {
-  background-image: url("src/img/history.png");
   width: 60px;
   height: 65px;
-  background-size: 60px 65px;
+  background-position: -20px -107px;
   top: 25px;
   left: 3px;
 }
 .features-list__item--note::before {
-  background-image: url("src/img/note.png");
   width: 56px;
   height: 56px;
-  background-size: 56px 56px;
+  background-position: -20px -477px;
   top: 29px;
   left: 6px;
 }
 .features-list__item--folders::before {
-  background-image: url("src/img/folders.png");
   width: 59px;
   height: 55px;
-  background-size: 59px 55px;
+  background-position: -20px -249px;
   top: 28px;
   left: 2px;
 }
 .features-list__item--calendar::before {
-  background-image: url("src/img/calendar.png");
   width: 53px;
   height: 48px;
-  background-size: 53px 48px;
+  background-position: -20px -553px;
   top: 32px;
   left: 5px;
 }
 .features-list__item--export::before {
-  background-image: url("src/img/export.png");
   width: 51px;
   height: 51px;
-  background-size: 51px 51px;
+  background-position: -20px -693px;
   top: 26px;
   left: 3px;
 }
 .features-list__item--clouds::before {
-  background-image: url("src/img/clouds.png");
   width: 59px;
   height: 37px;
-  background-size: 59px 37px;
+  background-position: -20px -192px;
   top: 40px;
   left: 3px;
 }
@@ -365,10 +356,9 @@ a {
   border: none;
 }
 .features-list__item--server::before {
-  background-image: url("src/img/server.png");
   width: 56px;
   height: 51px;
-  background-size: 56px 51px;
+  background-position: -20px -909px;
   top: 32px;
   left: 3px;
 }
@@ -467,4 +457,311 @@ a {
   margin-left: -17px;
   margin-bottom: 60px;
   z-index: 1;
+}
+.cost {
+  padding-top: 80px;
+  margin-bottom: 64px;
+}
+.cost__title {
+  position: relative;
+  font-size: 34px;
+  font-faimly: "ProximaNovaSemibold";
+  color: #2c3e50;
+  text-align: center;
+  line-height: 45px;
+  margin-bottom: 5px;
+}
+.cost__title::before {
+  content: "";
+  position: absolute;
+  width: 107px;
+  height: 86px;
+  background-image: url("src/img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -20px 0px;
+  left: 545px;
+  top: -95px;
+}
+.cost__descr {
+  text-align: center;
+  font-size: 20px;
+  color: #2c3e50;
+  line-htight: 40px;
+  margin: 0;
+  margin-bottom: 52px;
+}
+.price {
+  width: 1250px;
+  box-sizing: border-box;
+  margin-left: -28px;
+  border-collapse: separate;
+  border-spacing: 28px 0px;
+}
+.price td {
+  padding-left: 10px;
+  border-top: none;
+  border-left: 1px solid #d0d9e2;
+  border-right: 1px solid #e7ecf0;
+  width: 262px;
+}
+.price tr,
+.price td {
+  text-align: center;
+  color: #2c3e50;
+}
+.price__months {
+  background-color: #f8fbfb;
+  line-height: 62px;
+  font-family: "ProximaNovaSemibold";
+  font-size: 20px;
+}
+.price__months td {
+  border-top: 1px solid #d0d9e2;
+  border-bottom: 1px solid #e7ecf0;
+}
+.price__prev-cost {
+  line-height: 44px;
+  font-family: "ProximaNovaLight";
+  font-size: 22px;
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+.price__prev-cost td {
+  padding-top: 20px;
+}
+.price__current-cost {
+  line-height: 26px;
+  font-family: "ProximaNovaRegular";
+  font-size: 26px;
+}
+.price__current-cost td {
+  border-bottom: 1px solid #d0d9e2;
+  padding-bottom: 25px;
+}
+.registration-form {
+  background-color: #63be63;
+  padding-top: 30px;
+  padding-bottom: 68px;
+}
+.registration-form__title {
+  position: relative;
+  font-size: 32px;
+  line-htight: 47px;
+  text-align: center;
+  color: white;
+  margin-bottom: 37px;
+}
+.registration-form__title::before {
+  content: "";
+  position: absolute;
+  border: 30px solid transparent;
+  border-bottom: 18px solid #63be63;
+  top: -100px;
+  left: 565px;
+}
+.registration-form__title--green {
+  font-family: "ProximaNovaSemibold";
+  color: #c7fa90;
+}
+.registration-form__email {
+  width: 353px;
+  height: 38px;
+  border-radius: 5px;
+  border: 1px solid #4ab14a;
+  margin-left: 135px;
+  margin-right: 15px;
+  font-size: 15px;
+  color: #2c3e50;
+  padding-left: 42px;
+  background-image: url("src/img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -8px -963px;
+}
+.registration-form__password {
+  width: 218px;
+  height: 38px;
+  border-radius: 5px;
+  border: 1px solid #4ab14a;
+  margin-right: 25px;
+  font-size: 15px;
+  color: #2c3e50;
+  padding-left: 42px;
+  background-image: url("src/img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -8px -1000px;
+}
+.registration-form__submit {
+  width: 220px;
+  height: 44px;
+  border-radius: 5px;
+  border: 2px solid white;
+  background: none;
+  color: white;
+  font-size: 17px;
+}
+.page-footer {
+  padding-top: 52px;
+  padding-bottom: 40px;
+}
+.page-footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.page-footer__logo {
+  width: 120px;
+}
+.page-footer__right {
+  width: 400px;
+  position: relative;
+}
+.page-footer__right::before {
+  content: "";
+  position: absolute;
+  height: 85px;
+  border-left: 1px solid #cad1ca;
+  right: 469px;
+  top: 3px;
+}
+.page-footer__requisites {
+  float: left;
+  margin-top: 10px;
+  font-family: "ProximaNovaBold";
+  font-size: 14px;
+  margin-right: 180px;
+}
+.page-footer__ltd {
+  float: left;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.page-footer__copyright {
+  float: right;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.footer-nav {
+  margin-top: 5px;
+  font-size: 14px;
+  line-height: 28px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 90px;
+  width: 498px;
+}
+.social__title {
+  font-family: "ProximaNovaBold";
+  font-size: 14px;
+  margin-top: 10px;
+  float: left;
+  margin-right: 60px;
+  margin-bottom: 0;
+}
+.social__item {
+  float: left;
+}
+.social__item:not(:last-child) {
+  margin-right: 16px;
+}
+.social__circle {
+  margin-top: 2px;
+  width: 29px;
+  height: 29px;
+  border: #cad1ca 2px solid;
+  border-radius: 50px;
+  background-color: transparent;
+  background-image: url("src/img/sprite.png");
+  background-repeat: no-repeat;
+}
+.social__yt-btn {
+  background-position: -14px -868px;
+}
+.social__ig-btn {
+  background-position: -14px -833px;
+}
+.social__fb-btn {
+  background-position: -88px -396px;
+}
+.social__vk-btn {
+  background-position: -51px -839px;
+}
+.registration-pop-up {
+  display: none;
+  width: 582px;
+  background: white;
+  margin: 0 auto;
+  padding-top: 33px;
+  padding-bottom: 60px;
+  position: absolute;
+  top: 193px;
+  left: 380px;
+}
+.registration-pop-up__exit {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  color: #bec1c5;
+  font-size: 35px;
+  font-family: Arial;
+  transform: rotate(45deg);
+  transform-origin: center center;
+  top: 10px;
+  right: 10px;
+}
+.registration-pop-up__title {
+  font-size: 32px;
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 35px;
+}
+.registration-pop-up .registration-form__email {
+  display: block;
+  width: 343px;
+  margin: 0 auto;
+  margin-bottom: 22px;
+}
+.registration-pop-up .registration-form__password {
+  display: block;
+  width: 343px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.registration-pop-up .registration-form__checkbox {
+  display: none;
+}
+.registration-pop-up .registration-form__checkbox:checked + label::before {
+  cursor: pointer;
+  background-image: url("src/img/sprite.png");
+  background-repeat: bo-repeat;
+  background-position: -88px -690px;
+}
+.registration-pop-up .registration-form__checkbox + label {
+  display: block;
+  width: 388px;
+  margin: 0 auto;
+  color: #6b7884;
+  vertical-align: middle;
+}
+.registration-pop-up .registration-form__checkbox + label a {
+  text-decoration: underline;
+  color: #6b7884;
+}
+.registration-pop-up .registration-form__checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  vertical-align: middle;
+  border: 1px solid #ccd2d9;
+  border-radius: 6px;
+}
+.registration-pop-up .registration-form__submit {
+  margin: 0 auto;
+  display: block;
+  margin-top: 30px;
+  background-color: #63be63;
+  border: none;
+  width: 215px;
 }
