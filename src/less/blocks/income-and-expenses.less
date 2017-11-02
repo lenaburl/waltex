@@ -1,14 +1,21 @@
 .income-and-expenses {
   padding-top: 70px;
-  padding-left: 137px;
   background-image: url("src/img/features-bg.png");
+  background-size: cover;
+  min-width: 1186px;
+
+  .container {
+    padding-left: 70px;
+    box-sizing: border-box;
+  }
 
   &__descr {
+    display: inline-block;
     font-size: 32px;
     line-height: 47px;
     color: @dark-blue;
     width: 790px;
-    margin-right: 0px;
+    margin-right: 0;
     margin-bottom: 130px;
 
     &--green {
@@ -26,14 +33,13 @@
       &::after {
         content: "";
         position: absolute;
-        width: 505px;
+        width: 500px;
         height: 295px;
         border: 1px solid @grey;
         border-radius: 10px 0 0 10px;
         border-right: none;
         top: -60px;
         left: 0px;
-        z-index: 10;
 
       }
     }
@@ -41,9 +47,9 @@
     &__screen {
       width: 675px;
       margin-top: -90px;
-      margin-left: -17px;
+      margin-left: -22px;
       margin-bottom: 60px;
-      z-index: 1;
+      z-index: 20;
     }
 
 }

@@ -1,12 +1,12 @@
 html,
 body {
-  width: 100%;
   margin: 0;
   padding: 0;
 }
 body {
   font-family: "ProximaNovaRegular";
   position: relative;
+  overflow: scroll;
 }
 ul {
   list-style: none;
@@ -44,6 +44,8 @@ a {
 .page-header {
   padding-top: 27px;
   background-image: url("src/img/header-bg.png");
+  background-size: cover;
+  min-width: 1186px;
 }
 .page-header__top {
   display: flex;
@@ -198,12 +200,13 @@ a {
 .main-features {
   background-image: url("src/img/features-bg.png");
   padding-top: 117px;
+  background-size: cover;
+  min-width: 1186px;
 }
 .main-features__title {
   position: relative;
   color: #2c3e50;
   font-size: 32px;
-  line-htight: 35px;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -419,15 +422,21 @@ a {
 }
 .income-and-expenses {
   padding-top: 70px;
-  padding-left: 137px;
   background-image: url("src/img/features-bg.png");
+  background-size: cover;
+  min-width: 1186px;
+}
+.income-and-expenses .container {
+  padding-left: 70px;
+  box-sizing: border-box;
 }
 .income-and-expenses__descr {
+  display: inline-block;
   font-size: 32px;
   line-height: 47px;
   color: #2c3e50;
   width: 790px;
-  margin-right: 0px;
+  margin-right: 0;
   margin-bottom: 130px;
 }
 .income-and-expenses__descr--green {
@@ -442,21 +451,20 @@ a {
 .income-and-expenses .capabilities-list::after {
   content: "";
   position: absolute;
-  width: 505px;
+  width: 500px;
   height: 295px;
   border: 1px solid #d0d9e2;
   border-radius: 10px 0 0 10px;
   border-right: none;
   top: -60px;
   left: 0px;
-  z-index: 10;
 }
 .income-and-expenses__screen {
   width: 675px;
   margin-top: -90px;
-  margin-left: -17px;
+  margin-left: -22px;
   margin-bottom: 60px;
-  z-index: 1;
+  z-index: 20;
 }
 .cost {
   padding-top: 80px;
@@ -491,9 +499,8 @@ a {
   margin-bottom: 52px;
 }
 .price {
-  width: 1250px;
+  width: 1186px;
   box-sizing: border-box;
-  margin-left: -28px;
   border-collapse: separate;
   border-spacing: 28px 0px;
 }
@@ -502,7 +509,7 @@ a {
   border-top: none;
   border-left: 1px solid #d0d9e2;
   border-right: 1px solid #e7ecf0;
-  width: 262px;
+  width: 280px;
 }
 .price tr,
 .price td {
@@ -542,6 +549,7 @@ a {
   background-color: #63be63;
   padding-top: 30px;
   padding-bottom: 68px;
+  min-width: 1186px;
 }
 .registration-form__title {
   position: relative;
