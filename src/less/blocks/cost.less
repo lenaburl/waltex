@@ -5,7 +5,7 @@
   &__title {
     position: relative;
     font-size: 34px;
-    font-faimly: "ProximaNovaSemibold";
+    font-family: "ProximaNovaSemibold";
     color: @dark-blue;
     text-align: center;
     line-height: 45px;
@@ -15,12 +15,13 @@
       content: "";
       position: absolute;
       width: 107px;
-      height: 86px;
+      height: 50px;
       background-image: url("src/img/sprite.png");
       background-repeat: no-repeat;
-      background-position: -20px -0px;
-      left: 545px;
-      top: -95px;
+      background-position: -10px -0px;
+      left: 560px;
+      top: -64px;
+      background-size: 84px;
     }
   }
 
@@ -28,8 +29,36 @@
     text-align: center;
     font-size: 20px;
     color: @dark-blue;
-    line-htight: 40px;
     margin: 0;
     margin-bottom: 52px;
+  }
+}
+
+@media (max-width: 640px) {
+  .cost {
+    padding-top: 152px;
+    width: 640px;
+    min-width: 640px;
+    margin-bottom: 96px;
+
+    &__title {
+      font-size: 44px;
+      line-height: 92px;
+      margin-bottom: 0;
+
+      &::before {
+        left: 220px;
+        top: -120px;
+        background-position: -20px -0px;
+        width: 127px;
+        height: 107px;
+        background-size: 167px;
+      }
+    }
+
+    &__descr {
+      font-size: 32px;
+      margin-bottom: 70px;
+    }
   }
 }

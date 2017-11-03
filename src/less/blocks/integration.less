@@ -38,24 +38,79 @@
 
     &--webasyst {
       position: relative;
-    }
 
-    &--webasyst::after {
-      content: "Скоро";
-      position: absolute;
-      border-radius: 27px;
-      box-sizing: border-box;
-      width: 65px;
-      height: 27px;
-      background-color: #fab700;
-      color: white;
-      font-size: 15px;
-      text-align: center;
-      padding-top: 5px;
-      left: 185px;
-      top: 48px;
-
+      &::after {
+        content: "Скоро";
+        position: absolute;
+        border-radius: 27px;
+        box-sizing: border-box;
+        width: 65px;
+        height: 27px;
+        background-color: #fab700;
+        color: white;
+        font-size: 15px;
+        text-align: center;
+        padding-top: 5px;
+        left: 185px;
+        top: 48px;
+      }
     }
   }
+}
 
+@media (max-width: 640px) {
+  .integration {
+    width: 582px;
+    border-width: 2px;
+    border-radius: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    flex-direction: column;
+    height: 600px;
+    padding-top: 35px;
+    padding-bottom: 60px;
+    margin-bottom: 115px;
+
+    p {
+      font-size: 40px;
+      line-height: 92px;
+      text-align: center;
+      width: 582px;
+      margin-bottom: -85px;
+    }
+
+    &__item {
+      width: 582px;
+      margin-top: 0;
+
+      img {
+        width: 297px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      p {
+        font-size: 30px;
+        line-height: 48px;
+        margin-bottom: 0;
+      }
+
+      &--webasyst {
+
+        img {
+          width: 270px;
+        }
+
+        &::after {
+          width: 123px;
+          height: 54px;
+          font-size: 30px;
+          line-height: 54px;
+          padding-top: 0;
+          left: 325px;
+          top: -60px;
+        }
+      }
+    }
+  }
 }

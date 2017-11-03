@@ -47,7 +47,48 @@
     font-size: 14px;
     margin-top: 10px;
   }
+}
 
+@media (max-width: 640px) {
+  .page-footer {
+    padding-bottom: 25px;
 
+    .container {
+      flex-wrap: wrap;
+    }
 
+    &__logo {
+      width: 174px;
+      margin-top: 70px;
+      margin-left: 30px;
+    }
+
+    &__right {
+      width: 586px;
+
+      &::before {
+        width: 640px;
+        height: 3px;
+        border-left: none;
+        border-top: 2px solid #cad1ca;
+        right: -35px;
+        top: 163px;
+      }
+    }
+
+    &__requisites {
+      display: none;
+    }
+
+    &__ltd {
+      font-size: 26px;
+      line-height: 44px;
+      margin-top: 0;
+      margin-left: 13px;
+    }
+
+    &__copyright {
+      display: none;
+    }
+  }
 }

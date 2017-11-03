@@ -4,7 +4,7 @@
 
 
   border-collapse: separate;
-    border-spacing: 28px 0px;
+  border-spacing: 28px 0px;
 
   td {
     padding-left: 10px;
@@ -33,7 +33,7 @@
       }
   }
 
-  &__prev-cost {
+  &__prev-costs {
     line-height: 44px;
     font-family: "ProximaNovaLight";
     font-size: 22px;
@@ -45,7 +45,7 @@
     }
   }
 
-  &__current-cost {
+  &__current-costs {
     line-height: 26px;
     font-family: "ProximaNovaRegular";
     font-size: 26px;
@@ -56,4 +56,46 @@
     }
   }
 
+}
+
+@media (max-width: 640px) {
+  .price {
+    width: 586px;
+    border-spacing: 0;
+    border: 2px solid @grey;
+    border-radius: 5px;
+
+    .price__month {
+      width: 230px;
+    }
+
+
+    &__month {
+      font-size: 32px;
+      line-height: 121px;
+      font-family: "ProximaNovaSemibold";
+      background-color: #f8fbfb;
+    }
+
+    &__prev-cost {
+      font-size: 36px;
+      line-height: 121px;
+      font-family: "ProximaNovaLight";
+      text-decoration: line-through;
+      opacity: 0.7;
+    }
+
+    &__current-cost {
+      font-size: 40px;
+      line-height: 121px;
+    }
+
+    td {
+      border-right: none;
+      border-left: none;
+      border-bottom: 1px solid #e7ecf0;
+      padding-left: 0;
+      height: 121px;
+    }
+  }
 }

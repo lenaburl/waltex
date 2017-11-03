@@ -26,6 +26,10 @@
     &--green {
       color: @green;
     }
+
+    &--small-screen {
+      display: none;
+    }
   }
 
   &__descr {
@@ -65,11 +69,84 @@
     a::after {
       position: absolute;
       content: "";
-      width: 21px;
-      height: 10px;
+      width: 25px;
+      height: 15px;
       background-image: url("src/img/sprite.png");
       background-repeat: no-repeat;
-      background-position: -20px -809px;
+      background-position: -8px -771px;
+      background-size: 84px;
+      top: -3px;
+      left: -11px;;
+    }
+  }
+}
+
+
+@media (max-width: 640px) {
+  .page-header {
+    width: 640px;
+    min-width: 640px;
+    padding-top: 50px;
+
+    &__top {
+      height: 72px;
+      margin-bottom: 104px;
+    }
+
+    &__logo {
+      order: 1;
+      width: 253px;
+      margin-right: 0;
+    }
+
+    &__title {
+      font-size: 56px;
+      line-height: 80px;
+      margin-bottom: -10px;
+
+      &--small-screen {
+        display: block;
+      }
+
+      &--large-screen {
+        display: none;
+      }
+    }
+
+    &__descr {
+      font-size: 36px;
+      line-height: 64px;
+      margin-bottom: 25px;
+    }
+
+    &__screen {
+      width: 586px;
+    }
+
+    &__next {
+      width: 640px;
+      height: 265px;
+
+      p {
+        font-size: 26px;
+        line-height: 46px;
+        width: 540px;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+        display: inline-block;
+      }
+
+      a::after {
+        position: absolute;
+        content: "";
+        width: 42px;
+        height: 20px;
+        top: 50px;
+        left: -292px;
+        background-position: -20px -1542px;
+        background-size: 167px;
+      }
     }
   }
 }

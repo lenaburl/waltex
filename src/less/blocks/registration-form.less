@@ -8,7 +8,6 @@
   &__title {
     position: relative;
     font-size: 32px;
-    line-htight: 47px;
     text-align: center;
     color: white;
     margin-bottom: 37px;
@@ -22,7 +21,9 @@
       left: 565px;
     }
 
-
+    &--small-screen {
+      display: none;
+    }
 
     &--green {
       font-family: "ProximaNovaSemibold";
@@ -42,7 +43,8 @@
     padding-left: 42px;
     background-image: url("src/img/sprite.png");
     background-repeat: no-repeat;
-    background-position: -8px -963px;
+    background-position: -23px -874px;
+    background-size: 84px;
   }
 
   &__password {
@@ -56,7 +58,8 @@
     padding-left: 42px;
     background-image: url("src/img/sprite.png");
     background-repeat: no-repeat;
-    background-position: -8px -1000px;
+    background-position: -23px -845px;
+    background-size: 84px;
   }
 
   &__submit {
@@ -72,3 +75,66 @@
 
 }
 
+@media (max-width: 640px) {
+  .registration-form {
+    width: 640px;
+    min-width: 640px;
+    padding-bottom: 100px;
+
+
+    &__title {
+      font-size: 52px;
+      line-height: 72px;
+      margin-bottom: 50px;
+
+      &--large-screen {
+        display: none;
+      }
+
+      &--small-screen {
+        display: block;
+      }
+
+      &::before {
+        border-width: 50px;
+        border-bottom-width: 25px;
+        top: -145px;
+        left: 240px;
+      }
+    }
+
+    &__email,
+    &__password  {
+      width: 502px;
+      height: 70px;
+      font-size: 28px;
+      line-height: 48px;
+      padding-left: 82px;
+      border-width: 2px;
+      border-radius: 10px;
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 39px;
+    }
+
+    &__email {
+      background-position: -50px -1740px;
+      background-size: 167px;
+    }
+
+    &__password {
+      background-position: -52px -1683px;
+      background-size: 167px;
+    }
+
+    &__submit {
+      width: 586px;
+      height: 70px;
+      border-radius: 10px;
+      font-size: 28px;
+      line-height: 48px;
+    }
+
+  }
+
+}

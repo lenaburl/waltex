@@ -28,77 +28,78 @@
       position: absolute;
       background-repeat: no-repeat;
       background-image: url("src/img/sprite.png");
+      background-size: 84px;
     }
 
     &--planning::before {
       width: 57px;
-      height: 57px;
-      background-position: -20px -400px;
+      height: 59px;
+      background-position: -10px -317px;
       top: 32px;
       left: 3px;
     }
 
     &--networking::before {
-      width: 58px;
-      height: 56px;
-      background-position: -20px -324px;
+      width: 60px;
+      height: 60px;
+      background-position: -10px -251px;
       top: 38px;
       left: 0px;
     }
 
     &--team::before {
       width: 53px;
-      height: 52px;
-      background-position: -20px -621px;
-      top: 32px;
+      height: 57px;
+      background-position: -10px -570px;
+      top: 29px;
       left: 3px;
     }
 
     &--history::before {
       width: 60px;
-      height: 65px;
-      background-position: -20px -107px;
-      top: 25px;
+      height: 67px;
+      background-position: -10px -63px;
+      top: 23px;
       left: 3px;
     }
 
     &--note::before {
-      width: 56px;
-      height: 56px;
-      background-position: -20px -477px;
-      top: 29px;
+      width: 60px;
+      height: 60px;
+      background-position: -10px -384px;
+      top: 25px;
       left: 6px;
     }
 
     &--folders::before {
-      width: 59px;
-      height: 55px;
-      background-position: -20px -249px;
-      top: 28px;
-      left: 2px;
+      width: 61px;
+      height: 60px;
+      background-position: -10px -137px;
+      top: 24px;
+      left: 0;
     }
 
     &--calendar::before {
-      width: 53px;
-      height: 48px;
-      background-position: -20px -553px;
-      top: 32px;
+      width: 55px;
+      height: 55px;
+      background-position: -10px -512px;
+      top: 26px;
       left: 5px;
     }
 
     &--export::before {
       width: 51px;
-      height: 51px;
-      background-position: -20px -693px;
-      top: 26px;
+      height: 55px;
+      background-position: -10px -632px;
+      top: 20px;
       left: 3px;
     }
 
     &--clouds::before {
       width: 59px;
-      height: 37px;
-      background-position: -20px -192px;
-      top: 40px;
+      height: 39px;
+      background-position: -10px -204px;
+      top: 35px;
       left: 3px;
     }
 
@@ -107,11 +108,11 @@
     }
 
     &--server::before {
-      width: 56px;
-      height: 51px;
-      background-position: -20px -909px;
-      top: 32px;
-      left: 3px;
+      width: 60px;
+      height: 55px;
+      background-position: -10px -451px;
+      top: 17px;
+      left: 0;
     }
 
     &--server {
@@ -119,4 +120,184 @@
     }
 
   }
+
+  &__control {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+    .features-list {
+      padding-right: 0;
+      padding-left: 0;
+      width: 1200px;
+      margin-bottom: 125px;
+
+      &__item {
+        height: 224px;
+        width: 586px;
+        padding-left: 180px;
+        line-height: 220px;
+
+        p {
+          line-height: 44px;
+          font-size: 30px;
+        }
+
+        &--server,
+        &--clouds {
+          border-bottom: 1px dotted #cacaca;
+        }
+
+        &::before {
+          background-size: 167px;
+        }
+
+        &--planning::before {
+          background-position: -20px -635px;
+          width: 114px;
+          height: 114px;
+          top: 46px;
+          left: 13px;
+        }
+
+        &--team::before {
+          background-position: -20px -1141px;
+          width: 106px;
+          height: 104px;
+          top: 54px;
+          left: 17px;
+        }
+
+        &--note::before {
+          background-position: -20px -769px;
+          width: 113px;
+          height: 113px;
+          top: 52px;
+          left: 22px;
+        }
+
+        &--calendar::before {
+          background-position: -20px -1024px;
+          width: 107px;
+          height: 97px;
+          top: 62px;
+          left: 18px;
+        }
+
+        &--clouds::before {
+          background-position: -20px -408px;
+          width: 118px;
+          height: 74px;
+          top: 65px;
+          left: 20px;
+        }
+
+        &--networking::before {
+          background-position: -20px -502px;
+          width: 117px;
+          height: 113px;
+          top: 48px;
+          left: 20px;
+        }
+
+        &--history::before {
+          background-position: -20px -127px;
+          width: 120px;
+          height: 130px;
+          top: 35px;
+          left: 20px;
+        }
+
+        &--folders::before {
+          background-position: -20px -277px;
+          width: 119px;
+          height: 111px;
+          top: 58px;
+          left: 22px;
+        }
+
+        &--export::before {
+          background-position: -20px -1265px;
+          width: 102px;
+          height: 102px;
+          top: 56px;
+          left: 23px;
+        }
+
+        &--server::before {
+          background-position: -20px -902px;
+          width: 113px;
+          height: 102px;
+          top: 52px;
+          left: 23px;
+        }
+      }
+
+      &__control {
+        display: block;
+        position: absolute;
+        width: 230px;
+        background-color: white;
+        bottom: 676px;
+        left: 182px;
+      }
+
+      &__circle {
+        position: relative;
+        display: inline-block;
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        border: 4px solid #c6d2d9;
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 17px;
+          height: 17px;
+          border: 6px solid #c6d2d9;
+        }
+
+        &--active {
+          cursor: pointer;
+
+          &::before {
+            border-color: #9fb3bf;
+          }
+        }
+
+        &--inactive {
+          cursor: default;
+
+          &::before {
+            border-color: #c6d2d9;
+          }
+        }
+      }
+
+      &__right {
+
+        &::before {
+          border-top: none;
+          border-left: none;
+          top: 25px;
+          right: 28px;
+          transform: rotate(-45deg);
+        }
+      }
+
+      &__left {
+        margin-right: 25px;
+        margin-left: 20px;
+
+        &::before {
+          border-bottom: none;
+          border-right: none;
+          top: 25px;
+          left: 27px;
+          transform: rotate(-45deg);
+        }
+      }
+    }
 }

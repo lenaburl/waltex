@@ -53,8 +53,9 @@
     &:checked  + label::before {
       cursor: pointer;
       background-image: url("src/img/sprite.png");
-      background-repeat: bo-repeat;
-      background-position: -88px -690px;
+      background-repeat: no-repeat;
+      background-position: -8px -836px;
+      background-size: 84px;
 
     }
 
@@ -93,4 +94,14 @@
     width: 215px;
   }
 
+}
+
+@media (max-width: 640px) {
+  .registration-pop-up {
+    left: 29px;
+
+    .registration-form__submit {
+      font-size: 17px;
+    }
+  }
 }

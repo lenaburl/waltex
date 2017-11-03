@@ -15,9 +15,31 @@
       height: 12px;
       background-image: url("src/img/sprite.png");
       background-repeat: no-repeat;
-      background-position: -91px -693px;
+      background-position: -10px -840px;
+      background-size: 84px;
       left: -40px;
       top: 8px;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .capabilities-list {
+
+    &__item {
+      font-size: 30px;
+      line-height: 44px;
+      margin-left: 67px;
+      margin-bottom: 27px;
+
+      &::before {
+        width: 32px;
+        height: 25px;
+        left: -67px;
+        top: 4px;
+        background-position: -20px -1669px;
+        background-size: 167px;
+      }
     }
   }
 }
