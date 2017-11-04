@@ -95,12 +95,12 @@ function MinimizeTable () {
 
 
 ChangeText();
+MinimizeTable();
 
 $(document).ready(function() {
   LoginVisible();
   RegistrationVisible();
   LoginInvisible();
   RegistrationInvisible();
-  $(window).on('load',MinimizeTable);
   Carousel();
 });
