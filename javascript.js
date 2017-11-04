@@ -60,13 +60,12 @@ function Carousel () {
 }
 
 function ChangeText () {
-  if ($(window).width() < 640) {
+  if ($(window).width() <= "640") {
     $(".btn__enter").text("");
     $(".main-capabilities__link").removeClass("main-capabilities__link--hidden");
     $(".main-capabilities__try-btn").removeClass("main-capabilities__try-btn--hidden");
-  }
-  else {
-    $(".btn__enter").text("Войти");
+  } else {
+      $(".btn__enter").text("Войти");
     $(".main-capabilities__link").addClass("main-capabilities__link--hidden");
     $(".main-capabilities__try-btn").addClass("main-capabilities__try-btn--hidden");
   }
@@ -74,24 +73,23 @@ function ChangeText () {
 
 
 function MinimizeTable () {
-  if ( $(window).width() < 640 )
-  {
-      $(".price").each(function() {
-        var $this = $(this);
-        var newrows = [];
-        $this.find("tr").each(function(){
-            var i = 0;
-            $(this).find("td").each(function(){
-                i++;
-                if(newrows[i] === undefined) { newrows[i] = $("<tr></tr>"); }
-                newrows[i].append($(this));
-            });
-        });
-        $this.find("tr").remove();
-        $.each(newrows, function(){
-            $this.append(this);
-        });
+  if ($(window).width() <= "640") {
+    $(".price").each(function() {
+      var $this = $(this);
+      var newrows = [];
+      $this.find("tr").each(function(){
+          var i = 0;
+          $(this).find("td").each(function(){
+              i++;
+              if(newrows[i] === undefined) { newrows[i] = $("<tr></tr>"); }
+              newrows[i].append($(this));
+          });
       });
+      $this.find("tr").remove();
+      $.each(newrows, function(){
+          $this.append(this);
+      });
+    });
   }
 }
 
