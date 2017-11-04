@@ -1,303 +1,409 @@
-.features-list {
-  padding-left: 70px;
-  padding-right: 77px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 15px;
+.features-list
+{
+    display: flex;
 
-  &__item {
-    width: 430px;
-    position: relative;
-    border-bottom: 1px dotted #cacaca;
-    padding-left: 90px;
-    box-sizing: border-box;
-    height: 120px;
-    line-height: 120px;
+    margin-bottom: 15px;
+    padding-right: 77px;
+    padding-left: 70px;
 
-    p {
-      line-height: 24px;
-      color: black;
-      font-size: 17px;
-      vertical-align: middle;
-      display: inline-block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__item
+    {
+        line-height: 120px;
+
+        position: relative;
+
+        box-sizing: border-box;
+        width: 430px;
+        height: 120px;
+        padding-left: 90px;
+
+        border-bottom: 1px dotted #cacaca;
+
+        p
+        {
+            font-size: 17px;
+            line-height: 24px;
+
+            display: inline-block;
+
+            vertical-align: middle;
+
+            color: black;
+        }
+
+        &::before
+        {
+            position: absolute;
+
+            content: '';
+
+            background-image: url('src/img/sprite.png');
+            background-repeat: no-repeat;
+            background-size: 84px;
+        }
+
+        &--planning::before
+        {
+            top: 32px;
+            left: 3px;
+
+            width: 57px;
+            height: 59px;
+
+            background-position: -10px -317px;
+        }
+
+        &--networking::before
+        {
+            top: 38px;
+            left: 0;
+
+            width: 60px;
+            height: 60px;
+
+            background-position: -10px -251px;
+        }
+
+        &--team::before
+        {
+            top: 29px;
+            left: 3px;
+
+            width: 53px;
+            height: 57px;
+
+            background-position: -10px -570px;
+        }
+
+        &--history::before
+        {
+            top: 23px;
+            left: 3px;
+
+            width: 60px;
+            height: 67px;
+
+            background-position: -10px -63px;
+        }
+
+        &--note::before
+        {
+            top: 25px;
+            left: 6px;
+
+            width: 60px;
+            height: 60px;
+
+            background-position: -10px -384px;
+        }
+
+        &--folders::before
+        {
+            top: 24px;
+            left: 0;
+
+            width: 61px;
+            height: 60px;
+
+            background-position: -10px -137px;
+        }
+
+        &--calendar::before
+        {
+            top: 26px;
+            left: 5px;
+
+            width: 55px;
+            height: 55px;
+
+            background-position: -10px -512px;
+        }
+
+        &--export::before
+        {
+            top: 20px;
+            left: 3px;
+
+            width: 51px;
+            height: 55px;
+
+            background-position: -10px -632px;
+        }
+
+        &--clouds::before
+        {
+            top: 35px;
+            left: 3px;
+
+            width: 59px;
+            height: 39px;
+
+            background-position: -10px -204px;
+        }
+
+        &--clouds
+        {
+            border: none;
+        }
+
+        &--server::before
+        {
+            top: 17px;
+            left: 0;
+
+            width: 60px;
+            height: 55px;
+
+            background-position: -10px -451px;
+        }
+
+        &--server
+        {
+            border: none;
+        }
     }
 
-    &::before {
-      content: "";
-      position: absolute;
-      background-repeat: no-repeat;
-      background-image: url("src/img/sprite.png");
-      background-size: 84px;
+    &__control
+    {
+        display: none;
     }
-
-    &--planning::before {
-      width: 57px;
-      height: 59px;
-      background-position: -10px -317px;
-      top: 32px;
-      left: 3px;
-    }
-
-    &--networking::before {
-      width: 60px;
-      height: 60px;
-      background-position: -10px -251px;
-      top: 38px;
-      left: 0px;
-    }
-
-    &--team::before {
-      width: 53px;
-      height: 57px;
-      background-position: -10px -570px;
-      top: 29px;
-      left: 3px;
-    }
-
-    &--history::before {
-      width: 60px;
-      height: 67px;
-      background-position: -10px -63px;
-      top: 23px;
-      left: 3px;
-    }
-
-    &--note::before {
-      width: 60px;
-      height: 60px;
-      background-position: -10px -384px;
-      top: 25px;
-      left: 6px;
-    }
-
-    &--folders::before {
-      width: 61px;
-      height: 60px;
-      background-position: -10px -137px;
-      top: 24px;
-      left: 0;
-    }
-
-    &--calendar::before {
-      width: 55px;
-      height: 55px;
-      background-position: -10px -512px;
-      top: 26px;
-      left: 5px;
-    }
-
-    &--export::before {
-      width: 51px;
-      height: 55px;
-      background-position: -10px -632px;
-      top: 20px;
-      left: 3px;
-    }
-
-    &--clouds::before {
-      width: 59px;
-      height: 39px;
-      background-position: -10px -204px;
-      top: 35px;
-      left: 3px;
-    }
-
-    &--clouds {
-      border: none;
-    }
-
-    &--server::before {
-      width: 60px;
-      height: 55px;
-      background-position: -10px -451px;
-      top: 17px;
-      left: 0;
-    }
-
-    &--server {
-      border: none;
-    }
-
-  }
-
-  &__control {
-    display: none;
-  }
 }
 
-@media (max-width: 640px), handheld {
-    .features-list {
-      padding-right: 0;
-      padding-left: 0;
-      width: 1200px;
-      margin-bottom: 125px;
+@media (max-width: 640px), handheld
+{
+    .features-list
+    {
+        width: 1200px;
+        margin-bottom: 125px;
+        padding-right: 0;
+        padding-left: 0;
 
-      &__item {
-        height: 224px;
-        width: 586px;
-        padding-left: 180px;
-        line-height: 220px;
+        &__item
+        {
+            line-height: 220px;
 
-        p {
-          line-height: 44px;
-          font-size: 30px;
+            width: 586px;
+            height: 224px;
+            padding-left: 180px;
+
+            p
+            {
+                font-size: 30px;
+                line-height: 44px;
+            }
+
+            &--server,
+            &--clouds
+            {
+                border-bottom: 1px dotted #cacaca;
+            }
+
+            &::before
+            {
+                background-size: 167px;
+            }
+
+            &--planning::before
+            {
+                top: 46px;
+                left: 13px;
+
+                width: 114px;
+                height: 114px;
+
+                background-position: -20px -635px;
+            }
+
+            &--team::before
+            {
+                top: 54px;
+                left: 17px;
+
+                width: 106px;
+                height: 104px;
+
+                background-position: -20px -1141px;
+            }
+
+            &--note::before
+            {
+                top: 52px;
+                left: 22px;
+
+                width: 113px;
+                height: 113px;
+
+                background-position: -20px -769px;
+            }
+
+            &--calendar::before
+            {
+                top: 62px;
+                left: 18px;
+
+                width: 107px;
+                height: 97px;
+
+                background-position: -20px -1024px;
+            }
+
+            &--clouds::before
+            {
+                top: 65px;
+                left: 20px;
+
+                width: 118px;
+                height: 74px;
+
+                background-position: -20px -408px;
+            }
+
+            &--networking::before
+            {
+                top: 48px;
+                left: 20px;
+
+                width: 117px;
+                height: 113px;
+
+                background-position: -20px -502px;
+            }
+
+            &--history::before
+            {
+                top: 35px;
+                left: 20px;
+
+                width: 120px;
+                height: 130px;
+
+                background-position: -20px -127px;
+            }
+
+            &--folders::before
+            {
+                top: 58px;
+                left: 22px;
+
+                width: 119px;
+                height: 111px;
+
+                background-position: -20px -277px;
+            }
+
+            &--export::before
+            {
+                top: 56px;
+                left: 23px;
+
+                width: 102px;
+                height: 102px;
+
+                background-position: -20px -1265px;
+            }
+
+            &--server::before
+            {
+                top: 52px;
+                left: 23px;
+
+                width: 113px;
+                height: 102px;
+
+                background-position: -20px -902px;
+            }
         }
 
-        &--server,
-        &--clouds {
-          border-bottom: 1px dotted #cacaca;
+        &__control
+        {
+            position: absolute;
+            bottom: 676px;
+            left: 182px;
+
+            display: block;
+
+            width: 230px;
+
+            background-color: white;
         }
 
-        &::before {
-          background-size: 167px;
+        &__circle
+        {
+            position: relative;
+
+            display: inline-block;
+
+            width: 72px;
+            height: 72px;
+
+            border: 4px solid #c6d2d9;
+            border-radius: 50%;
+
+            &::before
+            {
+                position: absolute;
+
+                width: 17px;
+                height: 17px;
+
+                content: '';
+
+                border: 6px solid #c6d2d9;
+            }
+
+            &--active
+            {
+                cursor: pointer;
+
+                &::before
+                {
+                    border-color: #9fb3bf;
+                }
+            }
+
+            &--inactive
+            {
+                cursor: default;
+
+                &::before
+                {
+                    border-color: #c6d2d9;
+                }
+            }
         }
 
-        &--planning::before {
-          background-position: -20px -635px;
-          width: 114px;
-          height: 114px;
-          top: 46px;
-          left: 13px;
+        &__right
+        {
+            &::before
+            {
+                top: 25px;
+                right: 28px;
+
+                transform: rotate(-45deg);
+
+                border-top: none;
+                border-left: none;
+            }
         }
 
-        &--team::before {
-          background-position: -20px -1141px;
-          width: 106px;
-          height: 104px;
-          top: 54px;
-          left: 17px;
+        &__left
+        {
+            margin-right: 25px;
+            margin-left: 20px;
+
+            &::before
+            {
+                top: 25px;
+                left: 27px;
+
+                transform: rotate(-45deg);
+
+                border-right: none;
+                border-bottom: none;
+            }
         }
-
-        &--note::before {
-          background-position: -20px -769px;
-          width: 113px;
-          height: 113px;
-          top: 52px;
-          left: 22px;
-        }
-
-        &--calendar::before {
-          background-position: -20px -1024px;
-          width: 107px;
-          height: 97px;
-          top: 62px;
-          left: 18px;
-        }
-
-        &--clouds::before {
-          background-position: -20px -408px;
-          width: 118px;
-          height: 74px;
-          top: 65px;
-          left: 20px;
-        }
-
-        &--networking::before {
-          background-position: -20px -502px;
-          width: 117px;
-          height: 113px;
-          top: 48px;
-          left: 20px;
-        }
-
-        &--history::before {
-          background-position: -20px -127px;
-          width: 120px;
-          height: 130px;
-          top: 35px;
-          left: 20px;
-        }
-
-        &--folders::before {
-          background-position: -20px -277px;
-          width: 119px;
-          height: 111px;
-          top: 58px;
-          left: 22px;
-        }
-
-        &--export::before {
-          background-position: -20px -1265px;
-          width: 102px;
-          height: 102px;
-          top: 56px;
-          left: 23px;
-        }
-
-        &--server::before {
-          background-position: -20px -902px;
-          width: 113px;
-          height: 102px;
-          top: 52px;
-          left: 23px;
-        }
-      }
-
-      &__control {
-        display: block;
-        position: absolute;
-        width: 230px;
-        background-color: white;
-        bottom: 676px;
-        left: 182px;
-      }
-
-      &__circle {
-        position: relative;
-        display: inline-block;
-        width: 72px;
-        height: 72px;
-        border-radius: 50%;
-        border: 4px solid #c6d2d9;
-
-        &::before {
-          content: "";
-          position: absolute;
-          width: 17px;
-          height: 17px;
-          border: 6px solid #c6d2d9;
-        }
-
-        &--active {
-          cursor: pointer;
-
-          &::before {
-            border-color: #9fb3bf;
-          }
-        }
-
-        &--inactive {
-          cursor: default;
-
-          &::before {
-            border-color: #c6d2d9;
-          }
-        }
-      }
-
-      &__right {
-
-        &::before {
-          border-top: none;
-          border-left: none;
-          top: 25px;
-          right: 28px;
-          transform: rotate(-45deg);
-        }
-      }
-
-      &__left {
-        margin-right: 25px;
-        margin-left: 20px;
-
-        &::before {
-          border-bottom: none;
-          border-right: none;
-          top: 25px;
-          left: 27px;
-          transform: rotate(-45deg);
-        }
-      }
     }
 }

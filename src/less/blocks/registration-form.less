@@ -1,140 +1,176 @@
-.registration-form {
-  background-color: #63be63;
-  padding-top: 30px;
-  padding-bottom: 68px;
-  min-width: 1186px;
+.registration-form
+{
+    min-width: 1186px;
+    padding-top: 30px;
+    padding-bottom: 68px;
+
+    background-color: #63be63;
 
 
-  &__title {
-    position: relative;
-    font-size: 32px;
-    text-align: center;
-    color: white;
-    margin-bottom: 37px;
+    &__title
+    {
+        font-size: 32px;
 
-    &::before {
-      content: "";
-      position: absolute;
-      border: 30px solid transparent;
-      border-bottom: 18px solid #63be63;
-      top: -100px;
-      left: 565px;
+        position: relative;
+
+        margin-bottom: 37px;
+
+        text-align: center;
+
+        color: white;
+
+        &::before
+        {
+            position: absolute;
+            top: -100px;
+            left: 565px;
+
+            content: '';
+
+            border: 30px solid transparent;
+            border-bottom: 18px solid #63be63;
+        }
+
+        &--small-screen
+        {
+            display: none;
+        }
+
+        &--green
+        {
+            font-family: 'ProximaNovaSemibold';
+
+            color: #c7fa90;
+        }
     }
 
-    &--small-screen {
-      display: none;
+    &__email
+    {
+        font-size: 15px;
+
+        width: 353px;
+        height: 38px;
+        margin-right: 15px;
+        margin-left: 135px;
+        padding-left: 42px;
+
+        color: @dark-blue;
+        border: 1px solid @green;
+        border-radius: 5px;
+        background-image: url('src/img/sprite.png');
+        background-repeat: no-repeat;
+        background-position: -23px -874px;
+        background-size: 84px;
     }
 
-    &--green {
-      font-family: "ProximaNovaSemibold";
-      color: #c7fa90;
+    &__password
+    {
+        font-size: 15px;
+
+        width: 218px;
+        height: 38px;
+        margin-right: 25px;
+        padding-left: 42px;
+
+        color: @dark-blue;
+        border: 1px solid @green;
+        border-radius: 5px;
+        background-image: url('src/img/sprite.png');
+        background-repeat: no-repeat;
+        background-position: -23px -845px;
+        background-size: 84px;
     }
-  }
 
-  &__email {
-    width: 353px;
-    height: 38px;
-    border-radius: 5px;
-    border: 1px solid @green;
-    margin-left: 135px;
-    margin-right: 15px;
-    font-size: 15px;
-    color: @dark-blue;
-    padding-left: 42px;
-    background-image: url("src/img/sprite.png");
-    background-repeat: no-repeat;
-    background-position: -23px -874px;
-    background-size: 84px;
-  }
+    &__submit
+    {
+        font-size: 17px;
 
-  &__password {
-    width: 218px;
-    height: 38px;
-    border-radius: 5px;
-    border: 1px solid @green;
-    margin-right: 25px;
-    font-size: 15px;
-    color: @dark-blue;
-    padding-left: 42px;
-    background-image: url("src/img/sprite.png");
-    background-repeat: no-repeat;
-    background-position: -23px -845px;
-    background-size: 84px;
-  }
+        width: 220px;
+        height: 44px;
 
-  &__submit {
-    width: 220px;
-    height: 44px;
-    border-radius: 5px;
-    border: 2px solid white;
-    background: none;
-    color: white;
-    font-size: 17px;
-    cursor: pointer;
-  }
+        cursor: pointer;
 
+        color: white;
+        border: 2px solid white;
+        border-radius: 5px;
+        background: none;
+    }
 }
 
-@media (max-width: 640px), handheld {
-  .registration-form {
-    width: 640px;
-    min-width: 640px;
-    padding-bottom: 100px;
+@media (max-width: 640px), handheld
+{
+    .registration-form
+    {
+        width: 640px;
+        min-width: 640px;
+        padding-bottom: 100px;
 
 
-    &__title {
-      font-size: 52px;
-      line-height: 72px;
-      margin-bottom: 50px;
+        &__title
+        {
+            font-size: 52px;
+            line-height: 72px;
 
-      &--large-screen {
-        display: none;
-      }
+            margin-bottom: 50px;
 
-      &--small-screen {
-        display: block;
-      }
+            &--large-screen
+            {
+                display: none;
+            }
 
-      &::before {
-        border-width: 50px;
-        border-bottom-width: 25px;
-        top: -145px;
-        left: 240px;
-      }
+            &--small-screen
+            {
+                display: block;
+            }
+
+            &::before
+            {
+                top: -145px;
+                left: 240px;
+
+                border-width: 50px;
+                border-bottom-width: 25px;
+            }
+        }
+
+        &__email,
+        &__password
+        {
+            font-size: 28px;
+            line-height: 48px;
+
+            width: 502px;
+            height: 70px;
+            margin-right: 0;
+            margin-bottom: 39px;
+            margin-left: 0;
+            padding-left: 82px;
+
+            border-width: 2px;
+            border-radius: 10px;
+        }
+
+        &__email
+        {
+            background-position: -50px -1740px;
+            background-size: 167px;
+        }
+
+        &__password
+        {
+            background-position: -52px -1683px;
+            background-size: 167px;
+        }
+
+        &__submit
+        {
+            font-size: 28px;
+            line-height: 48px;
+
+            width: 586px;
+            height: 70px;
+
+            border-radius: 10px;
+        }
     }
-
-    &__email,
-    &__password  {
-      width: 502px;
-      height: 70px;
-      font-size: 28px;
-      line-height: 48px;
-      padding-left: 82px;
-      border-width: 2px;
-      border-radius: 10px;
-      margin-left: 0;
-      margin-right: 0;
-      margin-bottom: 39px;
-    }
-
-    &__email {
-      background-position: -50px -1740px;
-      background-size: 167px;
-    }
-
-    &__password {
-      background-position: -52px -1683px;
-      background-size: 167px;
-    }
-
-    &__submit {
-      width: 586px;
-      height: 70px;
-      border-radius: 10px;
-      font-size: 28px;
-      line-height: 48px;
-    }
-
-  }
-
 }

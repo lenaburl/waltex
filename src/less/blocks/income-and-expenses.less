@@ -1,105 +1,136 @@
-.income-and-expenses {
-  padding-top: 70px;
-  background-image: url("src/img/features-bg.png");
-  background-size: cover;
-  min-width: 1186px;
+.income-and-expenses
+{
+    min-width: 1186px;
+    padding-top: 70px;
 
-  .container {
-    padding-left: 70px;
-    box-sizing: border-box;
-  }
+    background-image: url('src/img/features-bg.png');
+    background-size: cover;
 
-  &__descr {
-    display: inline-block;
-    font-size: 32px;
-    line-height: 47px;
-    color: @dark-blue;
-    width: 790px;
-    margin-right: 0;
-    margin-bottom: 130px;
-
-    &--green {
-      color: #66bd66;
-    }
-  }
-
-    .capabilities-list {
-      position: relative;
-      padding-left: 95px;
-      font-size: 17px;
-      float: left;
-
-      &::after {
-        content: "";
-        position: absolute;
-        width: 500px;
-        height: 295px;
-        border: 1px solid @grey;
-        border-radius: 10px 0 0 10px;
-        border-right: none;
-        top: -60px;
-        left: 0px;
-
-      }
+    .container
+    {
+        box-sizing: border-box;
+        padding-left: 70px;
     }
 
-    &__screen {
-      width: 675px;
-      margin-top: -90px;
-      margin-left: -22px;
-      margin-bottom: 60px;
+    &__descr
+    {
+        font-size: 32px;
+        line-height: 47px;
+
+        display: inline-block;
+
+        width: 790px;
+        margin-right: 0;
+        margin-bottom: 130px;
+
+        color: @dark-blue;
+
+        &--green
+        {
+            color: #66bd66;
+        }
+    }
+
+    .capabilities-list
+    {
+        font-size: 17px;
+
+        position: relative;
+
+        float: left;
+
+        padding-left: 95px;
+
+        &::after
+        {
+            position: absolute;
+            top: -60px;
+            left: 0;
+
+            width: 500px;
+            height: 295px;
+
+            content: '';
+
+            border: 1px solid @grey;
+            border-right: none;
+            border-radius: 10px 0 0 10px;
+        }
+    }
+
+    &__screen
+    {
+        width: 675px;
+        margin-top: -90px;
+        margin-bottom: 60px;
+        margin-left: -22px;
     }
 }
 
-@media (max-width: 640px), handheld {
-  .income-and-expenses {
-    width: 640px;
-    min-width: 640px;
-    overflow: hidden;
-    padding-top: 45px;
+@media (max-width: 640px), handheld
+{
+    .income-and-expenses
+    {
+        overflow: hidden;
 
-    .container {
-      padding-left: 0;
-    }
+        width: 640px;
+        min-width: 640px;
+        padding-top: 45px;
 
-    .capabilities-list {
-      &__item {
-        &::before {
-          left: -70px;
-          top: 10px;
+        .container
+        {
+            padding-left: 0;
         }
-      }
-    }
 
-    &__descr {
-      width: 556px;
-      font-size: 40px;
-      line-height: 72px;
-      margin-bottom: 111px;
-    }
+        .capabilities-list
+        {
+            &__item
+            {
+                &::before
+                {
+                    top: 10px;
+                    left: -70px;
+                }
+            }
+        }
 
-    .capabilities-list {
-      line-height: 44px;
-      padding-left: 54px;
-      font-size: 30px;
-      width: 480px;
+        &__descr
+        {
+            font-size: 40px;
+            line-height: 72px;
 
-      &::after {
-        top: -50px;
-        left: 3px;
-        border: 2px solid @grey;
-        border-bottom: none;
-        width: 580px;
-        border-radius: 10px 10px 0 0;
-        height: 579px;
-      }
-    }
+            width: 556px;
+            margin-bottom: 111px;
+        }
 
-    &__screen {
-      margin-top: -9px;
-      width: 720px;
-      margin-left: -65px;
-      margin-bottom: 90px;
+        .capabilities-list
+        {
+            font-size: 30px;
+            line-height: 44px;
+
+            width: 480px;
+            padding-left: 54px;
+
+            &::after
+            {
+                top: -50px;
+                left: 3px;
+
+                width: 580px;
+                height: 579px;
+
+                border: 2px solid @grey;
+                border-bottom: none;
+                border-radius: 10px 10px 0 0;
+            }
+        }
+
+        &__screen
+        {
+            width: 720px;
+            margin-top: -9px;
+            margin-bottom: 90px;
+            margin-left: -65px;
+        }
     }
-  }
 }

@@ -1,152 +1,201 @@
-.page-header {
-  padding-top: 27px;
-  background-image: url("src/img/header-bg.png");
-  background-size: cover;
-  min-width: 1186px;
+.page-header
+{
+    min-width: 1186px;
+    padding-top: 27px;
 
-  &__top {
-    display: flex;
-    height: 56px;
-    justify-content: space-between;
-    margin-bottom: 58px;
-  }
+    background-image: url('src/img/header-bg.png');
+    background-size: cover;
 
-  &__logo {
-    width: 183px;
-    margin-right: 5px;
-  }
+    &__top
+    {
+        display: flex;
 
-  &__title {
-    color: #2c3e50;
-    font-family: "ProximaNovaLight";
-    font-size: 42px;
-    line-height: 46px;
-    margin-bottom: -12px;
+        height: 56px;
+        margin-bottom: 58px;
 
-    &--green {
-      color: @green;
+        justify-content: space-between;
     }
 
-    &--small-screen {
-      display: none;
-    }
-  }
-
-  &__descr {
-    color: #8b9197;
-    font-size: 22px;
-    margin-bottom: 55px;
-  }
-
-  &__screen {
-    width: 645px;
-    float: left;
-    margin-right: 40px;
-  }
-
-  &__next {
-    background-color: white;
-    height: 94px;
-    color: @dark-blue;
-    font-size: 16px;
-    line-height: 24px;
-    padding-top: 25px;
-    text-align: center;
-
-    p {
-      width: 800px;
-      margin: 0 auto;
-      margin-bottom: 10px;
+    &__logo
+    {
+        width: 183px;
+        margin-right: 5px;
     }
 
-    a {
-      position: relative;
-      margin: 0 auto;
-      max-width: 21px;
-      text-align: center;
+    &__title
+    {
+        font-family: 'ProximaNovaLight';
+        font-size: 42px;
+        line-height: 46px;
+
+        margin-bottom: -12px;
+
+        color: #2c3e50;
+
+        &--green
+        {
+            color: @green;
+        }
+
+        &--small-screen
+        {
+            display: none;
+        }
     }
 
-    a::after {
-      position: absolute;
-      content: "";
-      width: 25px;
-      height: 15px;
-      background-image: url("src/img/sprite.png");
-      background-repeat: no-repeat;
-      background-position: -8px -771px;
-      background-size: 84px;
-      top: -3px;
-      left: -11px;;
+    &__descr
+    {
+        font-size: 22px;
+
+        margin-bottom: 55px;
+
+        color: #8b9197;
     }
-  }
+
+    &__screen
+    {
+        float: left;
+
+        width: 645px;
+        margin-right: 40px;
+    }
+
+    &__next
+    {
+        font-size: 16px;
+        line-height: 24px;
+
+        height: 94px;
+        padding-top: 25px;
+
+        text-align: center;
+
+        color: @dark-blue;
+        background-color: white;
+
+        p
+        {
+            width: 800px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+
+        a
+        {
+            position: relative;
+
+            max-width: 21px;
+            margin: 0 auto;
+
+            text-align: center;
+        }
+
+        a::after
+        {
+            position: absolute;
+            top: -3px;
+            left: -11px;
+
+            width: 25px;
+            height: 15px;
+
+            content: '';
+
+            background-image: url('src/img/sprite.png');
+            background-repeat: no-repeat;
+            background-position: -8px -771px;
+            background-size: 84px;;
+        }
+    }
 }
 
 
-@media (max-width: 640px), handheld {
-  .page-header {
-    width: 640px;
-    min-width: 640px;
-    padding-top: 50px;
+@media (max-width: 640px), handheld
+{
+    .page-header
+    {
+        width: 640px;
+        min-width: 640px;
+        padding-top: 50px;
 
-    &__top {
-      height: 72px;
-      margin-bottom: 104px;
+        &__top
+        {
+            height: 72px;
+            margin-bottom: 104px;
+        }
+
+        &__logo
+        {
+            width: 253px;
+            margin-right: 0;
+
+            order: 1;
+        }
+
+        &__title
+        {
+            font-size: 56px;
+            line-height: 80px;
+
+            margin-bottom: -10px;
+
+            &--small-screen
+            {
+                display: block;
+            }
+
+            &--large-screen
+            {
+                display: none;
+            }
+        }
+
+        &__descr
+        {
+            font-size: 36px;
+            line-height: 64px;
+
+            margin-bottom: 25px;
+        }
+
+        &__screen
+        {
+            width: 586px;
+        }
+
+        &__next
+        {
+            width: 640px;
+            height: 265px;
+
+            p
+            {
+                font-size: 26px;
+                line-height: 46px;
+
+                display: inline-block;
+
+                width: 540px;
+                margin-right: 0;
+                margin-left: 0;
+
+                text-align: center;
+            }
+
+            a::after
+            {
+                position: absolute;
+                top: 50px;
+                left: -292px;
+
+                width: 42px;
+                height: 20px;
+
+                content: '';
+
+                background-position: -20px -1542px;
+                background-size: 167px;
+            }
+        }
     }
-
-    &__logo {
-      order: 1;
-      width: 253px;
-      margin-right: 0;
-    }
-
-    &__title {
-      font-size: 56px;
-      line-height: 80px;
-      margin-bottom: -10px;
-
-      &--small-screen {
-        display: block;
-      }
-
-      &--large-screen {
-        display: none;
-      }
-    }
-
-    &__descr {
-      font-size: 36px;
-      line-height: 64px;
-      margin-bottom: 25px;
-    }
-
-    &__screen {
-      width: 586px;
-    }
-
-    &__next {
-      width: 640px;
-      height: 265px;
-
-      p {
-        font-size: 26px;
-        line-height: 46px;
-        width: 540px;
-        margin-left: 0;
-        margin-right: 0;
-        text-align: center;
-        display: inline-block;
-      }
-
-      a::after {
-        position: absolute;
-        content: "";
-        width: 42px;
-        height: 20px;
-        top: 50px;
-        left: -292px;
-        background-position: -20px -1542px;
-        background-size: 167px;
-      }
-    }
-  }
 }
