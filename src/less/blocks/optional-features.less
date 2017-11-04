@@ -1,81 +1,109 @@
-.optional-features {
-  padding-top: 106px;
+.optional-features
+{
+    padding-top: 106px;
 
-  &__title {
-    position: relative;
-    color: @dark-blue;
-    font-size: 40px;
-    line-htight: 47px;
-    font-family: "ProximaNovaLight";
-    text-align: center;
-    margin-bottom: 26px;
+    &__title
+    {
+        font-family: 'ProximaNovaLight';
+        font-size: 40px;
 
-    &::before {
-      content: "";
-      position: absolute;
-      width: 65px;
-      height: 65px;
-      background-color: none;
-      border: 1px solid #c3cfd7;
-      border-radius: 50%;
-      top: -75px;
-      left: 562px;
+        position: relative;
+
+        margin-bottom: 26px;
+
+        text-align: center;
+
+        color: @dark-blue;
+
+        line-htight: 47px;
+
+        &::before
+        {
+            position: absolute;
+            top: -75px;
+            left: 562px;
+
+            width: 65px;
+            height: 65px;
+
+            content: '';
+
+            border: 1px solid #c3cfd7;
+            border-radius: 50%;
+            background-color: none;
+        }
+
+        &::after
+        {
+            position: absolute;
+            top: -60px;
+            left: 578px;
+
+            width: 40px;
+            height: 40px;
+
+            content: '';
+
+            background-image: url('src/img/sprite.png');
+            background-repeat: no-repeat;
+            background-position: -10px -693px;
+            background-size: 84px;
+        }
     }
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 40px;
-      height: 40px;
-      background-image: url("src/img/sprite.png");
-      background-repeat: no-repeat;
-      background-position: -10px -693px;
-      background-size: 84px;
-      top: -60px;
-      left: 578px;
-    }
-  }
 }
 
-@media (max-width: 640px), handheld {
-  .optional-features {
-    width: 640px;
-    min-width: 640px;
-    padding-top: 231px;
-    overflow: hidden;
+@media (max-width: 640px), handheld
+{
+    .optional-features
+    {
+        overflow: hidden;
 
-    .container {
-      position: relative;
+        width: 640px;
+        min-width: 640px;
+        padding-top: 231px;
+
+        .container
+        {
+            position: relative;
+        }
+
+
+        &__title
+        {
+            font-size: 44px;
+            line-height: 52px;
+
+            width: 586px;
+            margin-bottom: 20px;
+
+            &::before
+            {
+                top: -177px;
+                left: 242px;
+
+                width: 120px;
+                height: 120px;
+
+                border-width: 4px;
+                background-position: 5px -1358px;
+            }
+
+            &::after
+            {
+                position: absolute;
+                top: -143px;
+                left: 270px;
+
+                width: 69px;
+                height: 51px;
+
+                content: '';
+
+                background-image: url('src/img/sprite.png');
+                background-repeat: no-repeat;
+                background-position: -20px -1387px;
+                background-size: 167px;
+            }
+        }
     }
-
-
-    &__title {
-      width: 586px;
-      font-size: 44px;
-      line-height: 52px;
-      margin-bottom: 20px;
-
-      &::before {
-        top: -177px;
-        left: 242px;
-        width: 120px;
-        height: 120px;
-        border-width: 4px;
-        background-position: 5px -1358px;
-      }
-
-      &::after {
-        content: "";
-        position: absolute;
-        background-image: url("src/img/sprite.png");
-        background-repeat: no-repeat;
-        background-position: -20px -1387px;
-        width: 69px;
-        height: 51px;
-        left: 270px;
-        top: -143px;
-        background-size: 167px;
-      }
-    }
-  }
 }

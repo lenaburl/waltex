@@ -1,95 +1,122 @@
-.main-capabilities {
-  padding-left: 110px;
-  float: left;
-  margin-right: 110px;
+.main-capabilities
+{
+    float: left;
+
+    margin-right: 110px;
+    padding-left: 110px;
 
 
-  &__link {
-
-    &--hidden {
-      display: none;
-    }
-  }
-
-  &__descr {
-    position: relative;
-    font-size: 18px;
-    margin-left: -40px;
-
-    &--green {
-      color: #63be63;
-      font-family: "ProximaNovaBold";
+    &__link
+    {
+        &--hidden
+        {
+            display: none;
+        }
     }
 
-    &::after {
-      content: "";
-      position: absolute;
-      width: 26px;
-      height: 20px;
-      background-image: url("src/img/sprite.png");
-      background-repeat: no-repeat;
-      background-position: -55px -745px;
-      background-size: 84px;
-      left: 332px;
-      top: 5px;
+    &__descr
+    {
+        font-size: 18px;
+
+        position: relative;
+
+        margin-left: -40px;
+
+        &--green
+        {
+            font-family: 'ProximaNovaBold';
+
+            color: #63be63;
+        }
+
+        &::after
+        {
+            position: absolute;
+            top: 5px;
+            left: 332px;
+
+            width: 26px;
+            height: 20px;
+
+            content: '';
+
+            background-image: url('src/img/sprite.png');
+            background-repeat: no-repeat;
+            background-position: -55px -745px;
+            background-size: 84px;
+        }
     }
-  }
 
-  &__try-btn--hidden {
-    display: none;
-  }
-
+    &__try-btn--hidden
+    {
+        display: none;
+    }
 }
 
-@media (max-width: 640px), handheld {
-  .main-capabilities {
-    padding-left: 0;
-    margin-right: 0;
-    margin-bottom: 97px;
+@media (max-width: 640px), handheld
+{
+    .main-capabilities
+    {
+        margin-right: 0;
+        margin-bottom: 97px;
+        padding-left: 0;
 
-  .capabilities-list {
-    display: none;
-  }
+        .capabilities-list
+        {
+            display: none;
+        }
 
-    &__link {
-      font-size: 32px;
-      line-height: 32px;
-      color: @green;
-      border-bottom: 2px dashed @green;
-      position: relative;
+        &__link
+        {
+            font-size: 32px;
+            line-height: 32px;
 
-      &::after {
-        position: absolute;
-        content: "";
-        background-image: url("src/img/sprite.png");
-        background-repeat: no-repeat;
-        background-position: -109px -1387px;
-        width: 18px;
-        height: 24px;
-        top: 12px;
-        right: -41px;
+            position: relative;
 
-      }
+            color: @green;
+            border-bottom: 2px dashed @green;
+
+            &::after
+            {
+                position: absolute;
+                top: 12px;
+                right: -41px;
+
+                width: 18px;
+                height: 24px;
+
+                content: '';
+
+                background-image: url('src/img/sprite.png');
+                background-repeat: no-repeat;
+                background-position: -109px -1387px;
+            }
+        }
+
+        &__descr
+        {
+            display: none;
+        }
+
+        &__try-btn
+        {
+            width: 586px;
+            height: 80px;
+            margin-top: -20px;
+            margin-bottom: 12px;
+
+            text-align: center;
+
+            border-radius: 10px;
+            background-color: @green;
+            background-image: none;
+
+            a
+            {
+                font-size: 34px;
+
+                color: white;
+            }
+        }
     }
-
-    &__descr {
-      display: none;
-    }
-
-    &__try-btn {
-      margin-top: -20px;
-      background-color: @green;
-      background-image: none;
-      width: 586px;
-      height: 80px;
-      border-radius: 10px;
-      text-align: center;
-      margin-bottom: 12px;
-
-      a {
-        font-size: 34px;
-        color: white;
-      }
-    }
-  }
 }

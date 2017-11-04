@@ -1,94 +1,124 @@
-.page-footer {
-  padding-top: 52px;
-  padding-bottom: 40px;
+.page-footer
+{
+    padding-top: 52px;
+    padding-bottom: 40px;
 
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
+    .container
+    {
+        display: flex;
 
-
-  &__logo {
-    width: 120px;
-  }
-
-  &__right {
-    width: 400px;
-    position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      height: 85px;
-      border-left: 1px solid #cad1ca;
-      right: 469px;
-      top: 3px;
+        justify-content: space-between;
+        align-items: flex-start;
     }
 
-  }
 
-  &__requisites {
-    float: left;
-    margin-top: 10px;
-    font-family: "ProximaNovaBold";
-    font-size: 14px;
-    margin-right: 180px;
-  }
+    &__logo
+    {
+        width: 120px;
+    }
 
-  &__ltd {
-    float: left;
-    font-size: 14px;
-    margin-top: 10px;
-  }
+    &__right
+    {
+        position: relative;
 
-  &__copyright {
-    float: right;
-    font-size: 14px;
-    margin-top: 10px;
-  }
+        width: 400px;
+
+        &::before
+        {
+            position: absolute;
+            top: 3px;
+            right: 469px;
+
+            height: 85px;
+
+            content: '';
+
+            border-left: 1px solid #cad1ca;
+        }
+    }
+
+    &__requisites
+    {
+        font-family: 'ProximaNovaBold';
+        font-size: 14px;
+
+        float: left;
+
+        margin-top: 10px;
+        margin-right: 180px;
+    }
+
+    &__ltd
+    {
+        font-size: 14px;
+
+        float: left;
+
+        margin-top: 10px;
+    }
+
+    &__copyright
+    {
+        font-size: 14px;
+
+        float: right;
+
+        margin-top: 10px;
+    }
 }
 
-@media (max-width: 640px), handheld {
-  .page-footer {
-    padding-bottom: 25px;
+@media (max-width: 640px), handheld
+{
+    .page-footer
+    {
+        padding-bottom: 25px;
 
-    .container {
-      flex-wrap: wrap;
+        .container
+        {
+            flex-wrap: wrap;
+        }
+
+        &__logo
+        {
+            width: 174px;
+            margin-top: 70px;
+            margin-left: 30px;
+        }
+
+        &__right
+        {
+            width: 586px;
+
+            &::before
+            {
+                top: 163px;
+                right: -35px;
+
+                width: 640px;
+                height: 3px;
+
+                border-top: 2px solid #cad1ca;
+                border-left: none;
+            }
+        }
+
+        &__requisites
+        {
+            display: none;
+        }
+
+        &__ltd
+        {
+            font-size: 26px;
+            line-height: 44px;
+
+            margin-top: 0;
+            margin-left: 13px;
+        }
+
+        &__copyright
+        {
+            display: none;
+        }
     }
-
-    &__logo {
-      width: 174px;
-      margin-top: 70px;
-      margin-left: 30px;
-    }
-
-    &__right {
-      width: 586px;
-
-      &::before {
-        width: 640px;
-        height: 3px;
-        border-left: none;
-        border-top: 2px solid #cad1ca;
-        right: -35px;
-        top: 163px;
-      }
-    }
-
-    &__requisites {
-      display: none;
-    }
-
-    &__ltd {
-      font-size: 26px;
-      line-height: 44px;
-      margin-top: 0;
-      margin-left: 13px;
-    }
-
-    &__copyright {
-      display: none;
-    }
-  }
 }

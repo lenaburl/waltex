@@ -1,94 +1,115 @@
-.social {
+.social
+{
+    &__title
+    {
+        font-family: 'ProximaNovaBold';
+        font-size: 14px;
 
-  &__title {
-    font-family: "ProximaNovaBold";
-    font-size: 14px;
-    margin-top: 10px;
-    float: left;
-    margin-right: 60px;
-    margin-bottom: 0;
-  }
+        float: left;
 
-  &__item {
-    float: left;
-
-
-    &:not(:last-child) {
-      margin-right: 16px;
+        margin-top: 10px;
+        margin-right: 60px;
+        margin-bottom: 0;
     }
-  }
 
-  &__circle {
-    margin-top: 2px;
-    width: 29px;
-    height: 29px;
+    &__item
+    {
+        float: left;
 
-    border: #cad1ca 2px solid;
-    border-radius: 50px;
-    background-color: transparent;
-    background-image: url("src/img/sprite.png");
-    background-repeat: no-repeat;
-    background-size: 84px;
-  }
 
-  &__yt-btn {
-    background-position: -31px -798px;
-  }
+        &:not(:last-child)
+        {
+            margin-right: 16px;
+        }
+    }
 
-  &__ig-btn {
-    background-position: -30px -823px;
-  }
+    &__circle
+    {
+        width: 29px;
+        height: 29px;
+        margin-top: 2px;
 
-  &__fb-btn {
-    background-position: -45px -714px;
-  }
+        border: #cad1ca 2px solid;
+        border-radius: 50px;
+        background-color: transparent;
+        background-image: url('src/img/sprite.png');
+        background-repeat: no-repeat;
+        background-size: 84px;
+    }
 
-  &__vk-btn {
-    background-position: -5px -787px;
-  }
+    &__yt-btn
+    {
+        background-position: -31px -798px;
+    }
+
+    &__ig-btn
+    {
+        background-position: -30px -823px;
+    }
+
+    &__fb-btn
+    {
+        background-position: -45px -714px;
+    }
+
+    &__vk-btn
+    {
+        background-position: -5px -787px;
+    }
 }
 
-@media (max-width: 640px), handheld {
-  .social {
-    margin-top: 16px;
-    margin-bottom: 204px;
+@media (max-width: 640px), handheld
+{
+    .social
+    {
+        margin-top: 16px;
+        margin-bottom: 204px;
 
-    &__title {
-      font-size: 26px;
-      line-height: 40px;
-      width: 226px;
-      margin-left: 15px;
-      margin-right: 30px;
-    }
+        &__title
+        {
+            font-size: 26px;
+            line-height: 40px;
 
-    &__circle {
-      width: 57px;
-      height: 57px;
-      border-width: 4px;
-      background-size: 167px;
-    }
+            width: 226px;
+            margin-right: 30px;
+            margin-left: 15px;
+        }
 
-    &__item {
-      &:not(:last-child) {
-        margin-right: 18px;
-      }
-    }
+        &__circle
+        {
+            width: 57px;
+            height: 57px;
 
-    &__yt-btn {
-      background-position: -63px -1588px;
-    }
+            border-width: 4px;
+            background-size: 167px;
+        }
 
-    &__ig-btn {
-      background-position: -61px -1635px;
-    }
+        &__item
+        {
+            &:not(:last-child)
+            {
+                margin-right: 18px;
+            }
+        }
 
-    &__fb-btn {
-      background-position: -90px -1418px;
-    }
+        &__yt-btn
+        {
+            background-position: -63px -1588px;
+        }
 
-    &__vk-btn {
-      background-position: -10px -1564px;
+        &__ig-btn
+        {
+            background-position: -61px -1635px;
+        }
+
+        &__fb-btn
+        {
+            background-position: -90px -1418px;
+        }
+
+        &__vk-btn
+        {
+            background-position: -10px -1564px;
+        }
     }
-  }
 }
-

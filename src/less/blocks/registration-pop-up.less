@@ -1,107 +1,141 @@
-.registration-pop-up {
-  display: none;
-  width: 582px;
-  background: white;
-  margin: 0 auto;
-  padding-top: 33px;
-  padding-bottom: 60px;
-  position: absolute;
-  top: 193px;
-  left: 380px;
-
-  &--visible {
-    display: block;
-  }
-
-  &__exit {
-    width: 20px;
-    height: 20px;
+.registration-pop-up
+{
     position: absolute;
-    color: #bec1c5;
-    font-size: 35px;
-    font-family: Arial;
-    transform: rotate(45deg);
-    transform-origin: center center;
-    top: 10px;
-    right: 10px;
-  }
+    top: 193px;
+    left: 380px;
 
-  &__title {
-    font-size: 32px;
-    text-align: center;
-    color: @dark-blue;
-    margin-bottom: 35px;
-  }
-
-  .registration-form__email {
-    display: block;
-    width: 343px;
-    margin: 0 auto;
-    margin-bottom: 22px;
-  }
-
-  .registration-form__password {
-    display: block;
-    width: 343px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-  }
-
-  .registration-form__checkbox {
     display: none;
 
-    &:checked  + label::before {
-      cursor: pointer;
-      background-image: url("src/img/sprite.png");
-      background-repeat: no-repeat;
-      background-position: -8px -836px;
-      background-size: 84px;
+    width: 582px;
+    margin: 0 auto;
+    padding-top: 33px;
+    padding-bottom: 60px;
 
+    background: white;
+
+    &--visible
+    {
+        display: block;
     }
 
-    & + label {
-      display: block;
+    &__exit
+    {
+        font-family: Arial;
+        font-size: 35px;
 
-      width: 388px;
-      margin: 0 auto;
-      color: #6b7884;
-      vertical-align: middle;
+        position: absolute;
+        top: 10px;
+        right: 10px;
 
-      a {
-        text-decoration: underline;
-        color: #6b7884;
-      }
+        width: 20px;
+        height: 20px;
 
-      &::before {
-      content: "";
-      display: inline-block;
-      width: 20px;
-      height: 20px;
-      margin-right: 12px;
-      vertical-align: middle;
-      border: 1px solid #ccd2d9;
-      border-radius: 6px;
-      }
+        transform: rotate(45deg);
+        transform-origin: center center;
+
+        color: #bec1c5;
     }
-  }
 
-  .registration-form__submit {
-    margin:0 auto;
-    display: block;
-    margin-top: 30px;
-    background-color: #63be63;
-    border: none;
-    width: 215px;
-  }
+    &__title
+    {
+        font-size: 32px;
 
+        margin-bottom: 35px;
+
+        text-align: center;
+
+        color: @dark-blue;
+    }
+
+    .registration-form__email
+    {
+        display: block;
+
+        width: 343px;
+        margin: 0 auto;
+        margin-bottom: 22px;
+    }
+
+    .registration-form__password
+    {
+        display: block;
+
+        width: 343px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .registration-form__checkbox
+    {
+        display: none;
+
+        &:checked + label::before
+        {
+            cursor: pointer;
+
+            background-image: url('src/img/sprite.png');
+            background-repeat: no-repeat;
+            background-position: -8px -836px;
+            background-size: 84px;
+        }
+
+        & + label
+        {
+            display: block;
+
+            width: 388px;
+            margin: 0 auto;
+
+            vertical-align: middle;
+
+            color: #6b7884;
+
+            a
+            {
+                text-decoration: underline;
+
+                color: #6b7884;
+            }
+
+            &::before
+            {
+                display: inline-block;
+
+                width: 20px;
+                height: 20px;
+                margin-right: 12px;
+
+                content: '';
+                vertical-align: middle;
+
+                border: 1px solid #ccd2d9;
+                border-radius: 6px;
+            }
+        }
+    }
+
+    .registration-form__submit
+    {
+        display: block;
+
+        width: 215px;
+        margin: 0 auto;
+        margin-top: 30px;
+
+        border: none;
+        background-color: #63be63;
+    }
 }
 
-@media (max-width: 640px), handheld {
-  .registration-pop-up {
-    left: 29px;
+@media (max-width: 640px), handheld
+{
+    .registration-pop-up
+    {
+        left: 29px;
 
-    .registration-form__submit {
-      font-size: 17px;
+        .registration-form__submit
+        {
+            font-size: 17px;
+        }
     }
-  }
 }

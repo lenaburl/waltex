@@ -1,101 +1,134 @@
-.main-features {
-  background-image: url("src/img/features-bg.png");
-  padding-top: 117px;
-  background-size: cover;
-  min-width: 1186px;
+.main-features
+{
+    min-width: 1186px;
+    padding-top: 117px;
 
-  &__title {
-    position: relative;
-    color: @dark-blue;
-    font-size: 32px;
-    text-align: center;
-    margin-bottom: 50px;
+    background-image: url('src/img/features-bg.png');
+    background-size: cover;
 
-    &--green {
-      color: @green;
+    &__title
+    {
+        font-size: 32px;
+
+        position: relative;
+
+        margin-bottom: 50px;
+
+        text-align: center;
+
+        color: @dark-blue;
+
+        &--green
+        {
+            color: @green;
+        }
+
+        &::before
+        {
+            position: absolute;
+            top: -80px;
+            left: 560px;
+
+            width: 65px;
+            height: 65px;
+
+            content: '';
+
+            border: 1px solid #c3cfd7;
+            border-radius: 50%;
+            background-color: none;
+        }
+
+        &::after
+        {
+            position: absolute;
+            top: -70px;
+            left: 580px;
+
+            width: 40px;
+            height: 45px;
+
+            content: '';
+
+            background-image: url('src/img/sprite.png');
+            background-repeat: no-repeat;
+            background-position: -10px -728px;
+            background-size: 84px;
+        }
     }
 
-    &::before {
-      content: "";
-      position: absolute;
-      width: 65px;
-      height: 65px;
-      background-color: none;
-      border: 1px solid #c3cfd7;
-      border-radius: 50%;
-      top: -80px;
-      left: 560px;
+    .capabilities-list
+    {
+        float: right;
+
+        margin-top: 10px;
+        margin-right: 35px;
     }
 
-    &::after {
-      content: "";
-      position: absolute;
-      width: 40px;
-      height: 45px;
-      background-image: url("src/img/sprite.png");
-      background-repeat: no-repeat;
-      background-position: -10px -728px;
-      background-size: 84px;
-      top: -70px;
-      left: 580px;
+    &__screen
+    {
+        width: 680px;
+        margin-bottom: 63px;
     }
-  }
-
-  .capabilities-list {
-    float: right;
-    margin-right: 35px;
-    margin-top: 10px;
-  }
-
-  &__screen {
-    width: 680px;
-    margin-bottom: 63px;
-  }
 }
 
-@media (max-width: 640px), handheld {
-  .main-features {
-    width: 640px;
-    min-width: 640px;
-    padding-top: 222px;
-    overflow: hidden;
+@media (max-width: 640px), handheld
+{
+    .main-features
+    {
+        overflow: hidden;
 
-    .capabilities-list {
-      margin-right: 0;
+        width: 640px;
+        min-width: 640px;
+        padding-top: 222px;
+
+        .capabilities-list
+        {
+            margin-right: 0;
+        }
+
+        &__title
+        {
+            font-size: 40px;
+            line-height: 62px;
+
+            width: 586px;
+            margin-bottom: 55px;
+
+            &::before
+            {
+                top: -161px;
+                left: 227px;
+
+                width: 120px;
+                height: 120px;
+
+                border-width: 4px;
+            }
+
+            &::after
+            {
+                position: absolute;
+                top: -133px;
+                left: 260px;
+
+                width: 57px;
+                height: 64px;
+
+                content: '';
+
+                background-image: url('src/img/sprite.png');
+                background-repeat: no-repeat;
+                background-position: -20px -1458px;
+                background-size: 167px;
+            }
+        }
+
+        &__screen
+        {
+            width: 720px;
+            margin-bottom: 45px;
+            margin-left: -65px;
+        }
     }
-
-    &__title {
-      width: 586px;
-      font-size: 40px;
-      line-height: 62px;
-      margin-bottom: 55px;
-
-      &::before {
-        top: -161px;
-        left: 227px;
-        width: 120px;
-        height: 120px;
-        border-width: 4px;
-      }
-
-      &::after {
-        content: "";
-        position: absolute;
-        background-image: url("src/img/sprite.png");
-        background-repeat: no-repeat;
-        background-position: -20px -1458px;
-        width: 57px;
-        height: 64px;
-        left: 260px;
-        top: -133px;
-        background-size: 167px;
-      }
-    }
-
-    &__screen {
-      width: 720px;
-      margin-left: -65px;
-      margin-bottom: 45px;
-    }
-  }
 }
