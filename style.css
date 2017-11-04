@@ -206,7 +206,7 @@ a {
     color: white;
     font-size: 60px;
     left: 19px;
-    top: 1px;
+    top: 0;
   }
   .main-nav__item {
     display: none;
@@ -493,6 +493,8 @@ a {
 }
 @media (max-width: 640px) {
   .optional-features {
+    width: 640px;
+    min-width: 640px;
     padding-top: 231px;
     overflow: hidden;
   }
