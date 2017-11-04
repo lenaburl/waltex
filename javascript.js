@@ -96,13 +96,13 @@ function MinimizeTable () {
 }
 
 
+ChangeText();
 
 $(document).ready(function() {
   LoginVisible();
   RegistrationVisible();
   LoginInvisible();
   RegistrationInvisible();
-  MinimizeTable();
+  $(window).on('load',MinimizeTable);
   Carousel();
-  ChangeText();
 });
